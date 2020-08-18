@@ -1,4 +1,3 @@
-type diag_prop, property_type;
+vendor_internal_prop(thermal_normal_prop)
 
-# Thermal
-type thermal_normal_prop, property_type;
+vendor_public_prop(diag_prop)
