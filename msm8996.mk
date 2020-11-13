@@ -137,6 +137,7 @@ PRODUCT_PACKAGES += \
     android.frameworks.cameraservice.service@2.1.vendor \
     android.hardware.camera.provider@2.4-impl:32 \
     android.hardware.camera.provider@2.4-service \
+    vendor.qti.hardware.camera.device@1.0:64 \
     camera.msm8996 \
     Snap
 
