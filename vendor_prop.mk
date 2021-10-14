@@ -105,6 +105,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=1 \
+    debug.renderengine.backend=threaded \
     debug.sf.enable_hwc_vds=1 \
     debug.sf.hw=1 \
     dev.pm.dyn_samplingrate=1 \
