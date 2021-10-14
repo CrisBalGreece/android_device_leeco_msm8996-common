@@ -44,6 +44,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.btconfig.vendor=qcom \
     vendor.qcom.bluetooth.soc=rome
 
+# BPF
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.kernel.ebpf.supported=false
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.HAL3.enabled=1 \
