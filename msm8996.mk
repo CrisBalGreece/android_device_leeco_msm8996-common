@@ -197,6 +197,7 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl:64 \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.2.vendor \
     android.hardware.drm@1.3-service.clearkey
 
 # For config.fs
@@ -264,7 +265,8 @@ PRODUCT_PACKAGES += \
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl:64 \
-    android.hardware.keymaster@3.0-service
+    android.hardware.keymaster@3.0-service \
+    android.hardware.keymaster@3.0.vendor
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -296,6 +298,7 @@ PRODUCT_COPY_FILES += \
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.0 \
+    android.system.net.netd@1.0.vendor \
     libandroid_net \
     netutils-wrapper-1.0
 
