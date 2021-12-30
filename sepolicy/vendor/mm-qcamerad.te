@@ -1,2 +1,1 @@
-typeattribute mm-qcamerad binder_in_vendor_violators;
 binder_use(mm-qcamerad);
