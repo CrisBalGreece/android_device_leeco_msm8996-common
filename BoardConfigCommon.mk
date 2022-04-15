@@ -173,6 +173,10 @@ TARGET_USES_MKE2FS := true
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 
+# Properties
+TARGET_PRODUCT_PROP += $(PLATFORM_PATH)/product.prop
+TARGET_SYSTEM_PROP += $(PLATFORM_PATH)/system.prop
+
 # Recovery
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_leeco
 

@@ -1,0 +1,15 @@
+# Netflix property
+ro.netflix.bsp_rev=Q660-13149-1
+
+# G-keyboard
+ro.com.google.ime.kb_pad_port_l=7
+ro.com.google.ime.kb_pad_port_r=7
+ro.com.google.ime.kb_pad_land_l=14
+ro.com.google.ime.kb_pad_land_r=14
+ro.com.google.ime.kb_pad_port_b=1
+ro.com.google.ime.theme_id=5
+ro.com.google.ime.bs_theme=true
+
+# BPF
+ro.kernel.ebpf.supported=false
+bpf.progs_loaded=1
