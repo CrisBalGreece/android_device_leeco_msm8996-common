@@ -2,7 +2,7 @@
 <!--
 /*
 ** Copyright 2013, The Android Open Source Project
-** Copyright (C) 2020 The LineageOS Project
+** Copyright (C) 2022 The OctaviOS Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -336,6 +336,7 @@
         <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
         <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
         <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
+        <item>"/system/bin/libsurfaceflinger.so"</item>
     </string-array>
 
     <!-- Should the pinner service pin the Home application? -->
@@ -394,4 +395,11 @@
     <string-array name="config_biometric_sensors" translatable="false" >
         <item>0:2:15</item> <!-- ID0:Fingerprint:Strong -->
     </string-array>
+	
+    <!-- The component name, flattened to a string, for the default autofill service
+         to  enabled for an user. This service must be trusted, as it can be activated
+         without explicit consent of the user. If no autofill service with the
+          specified name exists on the device, autofill will be disabled by default. -->
+    <string name="config_defaultAutofillService" translatable="false">com.google.android.gms/.autofill.service.AutofillService</string>
+	
 </resources>
