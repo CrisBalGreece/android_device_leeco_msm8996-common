@@ -324,6 +324,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF.conf \
     $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
 
+# Offline Charger for A12
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/charger/images/battery_fail.png:root/res/images/charger/battery_fail.png \
+    $(LOCAL_PATH)/charger/images/battery_scale.png:root/res/images/charger/battery_scale.png \
+    $(LOCAL_PATH)/charger/images/cap_nums.png:root/res/images/charger/cap_nums.png
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
