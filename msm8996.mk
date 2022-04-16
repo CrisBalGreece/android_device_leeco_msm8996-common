@@ -297,6 +297,12 @@ PRODUCT_PACKAGES += \
     libandroid_net \
     netutils-wrapper-1.0
 
+# Offline Charger for A12
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/charger/images/battery_fail.png:root/res/images/charger/battery_fail.png \
+    $(LOCAL_PATH)/charger/images/battery_scale.png:root/res/images/charger/battery_scale.png \
+    $(LOCAL_PATH)/charger/images/cap_nums.png:root/res/images/charger/cap_nums.png
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
