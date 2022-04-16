@@ -18,6 +18,16 @@
 # LeEco msm8996 devices launched with M
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
+# PrebuiltApp
+ifeq ($(WITH_GAPPS), true)  
+PRODUCT_PACKAGES += \
+GCamGo
+else 
+PRODUCT_PACKAGES += \
+GCamGo \
+ViaBrowser
+endif
+
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
