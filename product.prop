@@ -13,3 +13,6 @@ ro.com.google.ime.bs_theme=true
 # BPF
 ro.kernel.ebpf.supported=false
 bpf.progs_loaded=1
+
+# Product launched with M
+ro.product.first_api_level=23
