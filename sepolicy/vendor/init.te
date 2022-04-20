@@ -20,3 +20,7 @@ allow init sysfs_scsi_devices_other:file relabelfrom;
 # A12
 allow init vfat:dir search;
 allow init hal_keymaster_hwservice:hwservice_manager { find add };
+allow init hidl_base_hwservice:hwservice_manager { find add };
+allow init hal_power_service:service_manager { find add };
+allow init default_android_hwservice:hwservice_manager { find add };
+allow init hal_perf_hwservice:hwservice_manager { find add };
