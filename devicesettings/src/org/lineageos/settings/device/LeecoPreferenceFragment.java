@@ -28,11 +28,9 @@ public class LeecoPreferenceFragment extends PreferenceFragment {
     private static final String TAG = "LeecoPreferenceFragment";
     private static final String KEY_CAMERA_FOCUS_FIX_ENABLE = "camera_focus_enable";
     private static final String KEY_QUICK_CHARGE_ENABLE = "quick_charge_enable";
-    private static final String KEY_CAMHAL3_ENABLE = "key_camera_hal3_enable";
 
     private SwitchPreference mCameraFocusFixEnable;
     private SwitchPreference mQuickChargeEnable;
-    private SwitchPreference mCamHal3Enable;
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -48,15 +46,6 @@ public class LeecoPreferenceFragment extends PreferenceFragment {
         mCameraFocusFixEnable = (SwitchPreference) findPreference(KEY_CAMERA_FOCUS_FIX_ENABLE);
         mQuickChargeEnable = (SwitchPreference) findPreference(KEY_QUICK_CHARGE_ENABLE);
         mCamHal3Enable = (SwitchPreference) findPreference(KEY_CAMHAL3_ENABLE);
-
-        if (SettingsUtils.supportCamHalLevelSwitch()) {
-            mCamHal3Enable.setChecked(SettingsUtils.cameraHAL3Enable());
-            Log.d(TAG, "onCreatePreferences: cam hal3 enable = " + SettingsUtils.cameraHAL3Enable());
-            mCamHal3Enable.setOnPreferenceChangeListener(mPrefListener);
-        } else {
-            prefSet.removePreference(mCamHal3Enable);
-        }
-
 
         if (SettingsUtils.supportsCameraFocusFix()) {
             mCameraFocusFixEnable.setChecked(SettingsUtils.getCameraFocusFixEnabled(getActivity()));
@@ -83,12 +72,6 @@ public class LeecoPreferenceFragment extends PreferenceFragment {
         super.onResume();
         Log.d(TAG, "onResume+++");
         getListView().setPadding(0, 0, 0, 0);
-        //prop maybe modify by adb when onpause, so check from prop again
-        if (SettingsUtils.supportCamHalLevelSwitch()
-                && null != mCamHal3Enable) {
-            mCamHal3Enable.setChecked(SettingsUtils.cameraHAL3Enable());
-            Log.d(TAG, "onResume: cam hal3 enable = " + SettingsUtils.cameraHAL3Enable());
-        }
         Log.d(TAG, "onResume---");
     }
 
@@ -108,10 +91,6 @@ public class LeecoPreferenceFragment extends PreferenceFragment {
                     SettingsUtils.setQuickChargeEnabled(getActivity(), enabled);
                     SettingsUtils.writeQuickChargeProp(enabled);
                     Log.d(TAG, "onPreferenceChange: quick charge enable = " + enabled);
-                } else if (KEY_CAMHAL3_ENABLE.equals(key)) {
-                    boolean enabled = (boolean) value;
-                    SettingsUtils.writeCameraHAL3Prop(enabled);
-                    Log.d(TAG, "onPreferenceChange: cam hal3 enable = " + enabled);
                 }
 
                 return true;
