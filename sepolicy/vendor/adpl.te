@@ -1,0 +1,3 @@
+get_prop(adpl, default_prop)
+
+allow adpl default_prop:file { read };

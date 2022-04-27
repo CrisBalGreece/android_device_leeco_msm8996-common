@@ -1,4 +1,6 @@
 allow cnd self:capability { chown fsetid net_raw };
 
-#set_prop(cnd, debug_prop)
-#get_prop(cnd, wifi_prop)
+set_prop(cnd, default_prop)
+get_prop(cnd, default_prop)
+
+allow cnd default_prop:file { read };

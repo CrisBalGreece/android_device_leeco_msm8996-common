@@ -1,4 +1,5 @@
 allow qti init:unix_stream_socket { connectto };
 
-#set_prop(qti, debug_prop)
-#set_prop(qti, diag_prop)
+set_prop(qti, default_prop)
+
+allow qti default_prop:file { read };

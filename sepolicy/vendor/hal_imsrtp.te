@@ -1,0 +1,2 @@
+
+allow hal_imsrtp default_prop:file { read };
