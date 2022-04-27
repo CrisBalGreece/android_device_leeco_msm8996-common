@@ -45,7 +45,6 @@ public class LeecoPreferenceFragment extends PreferenceFragment {
         final PreferenceScreen prefSet = getPreferenceScreen();
         mCameraFocusFixEnable = (SwitchPreference) findPreference(KEY_CAMERA_FOCUS_FIX_ENABLE);
         mQuickChargeEnable = (SwitchPreference) findPreference(KEY_QUICK_CHARGE_ENABLE);
-        mCamHal3Enable = (SwitchPreference) findPreference(KEY_CAMHAL3_ENABLE);
 
         if (SettingsUtils.supportsCameraFocusFix()) {
             mCameraFocusFixEnable.setChecked(SettingsUtils.getCameraFocusFixEnabled(getActivity()));
