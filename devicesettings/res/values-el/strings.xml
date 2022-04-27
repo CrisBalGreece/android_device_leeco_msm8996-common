@@ -15,8 +15,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="camera_hal3_title">Απενεργ./Ενεργ/ση HAL3</string>
-    <string name="camera_hal3_summary">Απενεργοποιώντας το HAL3 θα αναγκάσει σε άμεση χρήση το στοκ  HAL1. Να θυμάστε ότι όλες οι Gcam απαιτούν το HAL3 και θα πρέπει μετά την κάθε αλλαγή, να περιμένετε λίγο πριν να εκκινήσετε την κάμερα, ώστε να εκκινήσει σωστά και πάλι η υπηρεσία HAL.</string>
     <string name="battery_settings_title">Μπαταρία</string>
     <string name="camera_pref_title">Φωτογραφική</string>
     <string name="powersave_settings_title">Εξοικονόμηση ενέργειας</string>

@@ -15,8 +15,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="camera_hal3_title">Отключить/включить HAL3</string>
-    <string name="camera_hal3_summary">Отключение HAL3 приведет к принудительному использованию HAL1. Обратите внимание, что для модов Gcam требуется HAL3, вы должны подождать минуту, прежде чем использовать приложение камеры, так как для применения HAL требуется перезагрузка приложения Камера.</string>
     <string name="battery_settings_title">Аккумулятор</string>
     <string name="camera_pref_title">Камера</string>
     <string name="powersave_settings_title">Энергосбережение</string>
