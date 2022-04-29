@@ -139,8 +139,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl:32 \
     android.hardware.camera.provider@2.4-service \
-    camera.msm8996 \
-    Snap
+    camera.msm8996
 
 # Common config scripts
 PRODUCT_PACKAGES += \
