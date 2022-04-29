@@ -3,3 +3,5 @@ get_prop(hal_power_default, vendor_power_prop)
 set_prop(hal_power_default, vendor_power_prop)
 allow hal_power_default debugfs:file { read };
 allow hal_power_default vendor_power_prop:file { read };
+allow hal_power_default proc:{ file lnk_file } rw_file_perms;
+allow hal_power_default cgroup:file r_file_perms;
