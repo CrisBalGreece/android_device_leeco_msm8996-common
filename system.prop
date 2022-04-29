@@ -1,0 +1,11 @@
+# BPF
+ro.kernel.ebpf.supported=false
+
+# Charger
+ro.charger.enable_suspend=true
+
+# OctaviOS Official Props
+ro.octavi.display.pid=1572201
+ro.octavi.maintainer=CrisBalGreece
+ro.octavi.hw.cam=21Mp,8Mp 
+ro.octavi.hw.cpu=Snapdragon 820
