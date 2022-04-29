@@ -1,10 +1,6 @@
 # BPF
 ro.kernel.ebpf.supported=false
 
-# Iorap
-iorapd.perfetto.enable=true
-persist.device_config.runtime_native_boot.iorap_readahead_enable=true
-
 # Charger
 ro.charger.enable_suspend=true
 

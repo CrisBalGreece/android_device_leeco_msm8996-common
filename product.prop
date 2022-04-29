@@ -16,3 +16,7 @@ bpf.progs_loaded=1
 
 # Product launched with M
 ro.product.first_api_level=23
+
+# Iorap
+iorapd.perfetto.enable=true
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
