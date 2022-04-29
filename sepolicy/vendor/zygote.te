@@ -2,3 +2,4 @@ allow zygote proc_cmdline:file { r_file_perms };
 
 # A12
 allow zygote sysfs:dir { create };
+get_prop(zygote, exported_camera_prop);

@@ -1,2 +1,2 @@
 
-allow hal_imsrtp default_prop:file { read };
+allow hal_imsrtp default_prop:file (open read set);

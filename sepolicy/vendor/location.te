@@ -1,1 +1,1 @@
-allow location default_prop:file { read };
+allow location default_prop:file (open read set);

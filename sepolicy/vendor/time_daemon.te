@@ -1,2 +1,2 @@
 allow time_daemon self:capability { setgid setuid };
-allow time_daemon default_prop:file { read };
+allow time_daemon default_prop:file (open read set);

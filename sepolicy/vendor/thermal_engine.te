@@ -20,4 +20,5 @@ type_transition thermal-engine socket_device:sock_file thermal_socket "thermal-r
 unix_socket_connect(thermal-engine, property, init);
 
 # A12
-allow thermal-engine thermal_normal_prop:property_service set;
+allow thermal-engine thermal_normal_prop:property_service (open read set);
+allow thermal-engine default_prop:file (open read set);
