@@ -1,1 +1,1 @@
-allow port-bridge default_prop:file { open read set };
+allow port-bridge default_prop:file { open read };
