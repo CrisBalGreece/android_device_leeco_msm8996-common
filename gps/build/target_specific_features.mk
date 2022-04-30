@@ -1,6 +1,6 @@
 GNSS_CFLAGS := \
     -Werror \
-    -Wno-error=unused-parameter \
+    -Wno-unused-parameter \
     -Wno-error=macro-redefined \
     -Wno-error=reorder \
     -Wno-reorder-ctor \
