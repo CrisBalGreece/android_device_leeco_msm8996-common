@@ -103,7 +103,7 @@ public class DozeSettingsFragment extends PreferenceFragment implements
         mPocketPreference.setEnabled(isChecked);
     }
 
-    public static class HelpDialogFragment extends DialogFragment {
+    private static class HelpDialogFragment extends DialogFragment {
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
             return new AlertDialog.Builder(getActivity())
