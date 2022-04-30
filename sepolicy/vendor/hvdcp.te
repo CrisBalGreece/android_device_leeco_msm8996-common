@@ -4,4 +4,4 @@ allow hvdcp sysfs_batteryinfo:file w_file_perms;
 
 dontaudit hvdcp self:capability { dac_override };
 
-allow hvdcp default_prop:file { open read set };
+allow hvdcp default_prop:file { open read };

@@ -13,8 +13,7 @@ set_prop(vendor_init, persist_debug_prop);
 set_prop(vendor_init, bluetooth_prop);
 set_prop(vendor_init, default_prop);
 set_prop(vendor_init, thermal_normal_prop);
-set_prop(vendor_init, init_service_status_private_prop);
+set_prop(vendor_init, vendor_tee_listener_prop);
 
-allow vendor_init init_service_status_private_prop:file read;
-allow vendor_init vendor_tee_listener_prop:file (open read set);
+allow vendor_init vendor_tee_listener_prop:file { open read };
 allow vendor_init proc:file w_file_perms;
