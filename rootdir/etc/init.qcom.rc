@@ -460,7 +460,7 @@ service qcamerasvr /vendor/bin/mm-qcamera-daemon
     class late_start
     user camera
     group camera system inet input graphics
-    task_profiles ServiceCapacityLow
+    writepid /dev/cpuset/camera-daemon/tasks
 
 # Start up peripheral manager
 service vendor.per_mgr /vendor/bin/pm-service
@@ -475,7 +475,7 @@ service vendor.per_proxy /vendor/bin/pm-proxy
     user system
     group system
     disabled
-    task_profiles ServiceCapacityLow
+    writepid /dev/cpuset/system-background/tasks
 
 on property:init.svc.vendor.per_mgr=running
     start vendor.per_proxy
@@ -488,7 +488,7 @@ service vendor.qseecomd /vendor/bin/qseecomd
    class core
    user root
    group root
-   task_profiles ServiceCapacityLow
+   writepid /dev/cpuset/system-background/tasks
 
 service thermal-engine /vendor/bin/thermal-engine -c ${sys.qcom.thermalcfg:-/vendor/etc/thermal-engine.conf}
     class main
@@ -498,7 +498,7 @@ service thermal-engine /vendor/bin/thermal-engine -c ${sys.qcom.thermalcfg:-/ven
     socket thermal-recv-passive-client stream 0666 system system
     socket thermal-send-rule stream 0660 system system
     group system root diag
-    task_profiles ServiceCapacityLow
+    writepid /dev/cpuset/system-background/tasks
 
 service adsprpcd /vendor/bin/adsprpcd
    class main
@@ -575,7 +575,7 @@ service vendor.sensors.qti /vendor/bin/sensors.qti
     class core
     user system
     group system
-    task_profiles ServiceCapacityLow
+    writepid /dev/cpuset/system-background/tasks
 
 service cnss-daemon /vendor/bin/cnss-daemon -n -l
     class late_start
@@ -590,13 +590,13 @@ service loc_launcher /vendor/bin/loc_launcher
     class late_start
     user gps
     group gps
-    task_profiles ServiceCapacityLow
+    writepid /dev/cpuset/system-background/tasks
 
 service vendor.atfwd /vendor/bin/ATFWD-daemon
     class late_start
     user system
     group system radio
-    task_profiles ServiceCapacityLow
+    writepid /dev/cpuset/system-background/tasks
 
 service vendor.ril-daemon2 /vendor/bin/hw/rild -c 2
     class main
@@ -631,7 +631,7 @@ service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqb
     class core
     user root
     group root
-    task_profiles ServiceCapacityLow
+    writepid /dev/cpuset/system-background/tasks
 
 service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
     class main
@@ -644,7 +644,7 @@ service vendor.charger /vendor/bin/charger
     group system graphics input log
     capabilities SYS_BOOT
     seclabel u:r:vendor_charger:s0
-    task_profiles ServiceCapacityLow
+    writepid /dev/cpuset/system-background/tasks
 
 on property:vendor.sys.listeners.registered=*
     setprop sys.keymaster.loaded ${vendor.sys.listeners.registered}
