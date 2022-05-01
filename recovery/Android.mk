@@ -13,6 +13,8 @@ LOCAL_C_INCLUDES := \
     bootable/recovery/updater/include \
     system/libbase/include
 
+LOCAL_CFLAGS := -Wno-unused-parameter -Wno-unused-variable
+
 LOCAL_SRC_FILES := recovery_updater.cpp
 LOCAL_MODULE := librecovery_updater_leeco
 LOCAL_MODULE_TAGS := optional
