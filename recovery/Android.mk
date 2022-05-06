@@ -2,6 +2,8 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
+LOCAL_CFLAGS := -Wno-unused-parameter -Wno-unused-variable
+
 ifneq ($(TARGET_PLATFORM_DEVICE_BASE),)
 LOCAL_CFLAGS += -DUSES_BOOTDEVICE_PATH
 endif
