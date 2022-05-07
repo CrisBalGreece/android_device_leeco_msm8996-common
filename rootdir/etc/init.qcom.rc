@@ -663,3 +663,8 @@ on property:persist.sys.le_fast_chrg_enable=1
 
 on property:persist.sys.le_fast_chrg_enable=0
     write /sys/class/power_supply/le_ab/le_quick_charge_mode 1
+	
+#Cam2API switch from DT DeviceSettings
+on property:persist.camera.HAL3.enabled=*
+    restart qcamerasvr
+    restart vendor.camera-provider-2-4
