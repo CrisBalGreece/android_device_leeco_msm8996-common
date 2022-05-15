@@ -3,6 +3,9 @@ persist.sys.diag.max.size          u:object_r:diag_prop:s0
 # camera
 persist.camera.                    u:object_r:camera_prop:s0
 
+# DPM
+persist.env.fastdorm.enabled       u:object_r:vendor_default_prop:s0
+
 # netmgrd
 persist.net.doxlat                 u:object_r:vendor_xlat_prop:s0
 
