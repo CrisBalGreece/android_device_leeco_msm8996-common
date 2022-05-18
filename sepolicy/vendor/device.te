@@ -1,1 +1,4 @@
 type consumer_ir_device, dev_type;
+
+# Sepolicy for capricorn fp
+type captouch_device, dev_type;
