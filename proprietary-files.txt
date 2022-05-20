@@ -677,12 +677,11 @@ vendor/lib64/sensors.hal.tof.so|eb19aa40617e50bd1efcc88cee9f5b0af34e7f11
 vendor/lib64/sensors.oem.so|08c12372d3331ee43cc0a3f48b88f21e45324f29
 vendor/lib/sensors.oem.so|08656a65ab1bf120ac9bb16e93faf93cc2cdda86
 
-# Thermal
-vendor/bin/thermal-engine
--vendor/lib64/libthermalclient.so
-vendor/lib64/libthermalfeature.so
-vendor/lib64/libthermalioctl.so
--vendor/lib/libthermalclient.so
+# Thermal - from LA.UM.9.6.2.r1-04200-89xx.0
+vendor/bin/thermal-engine|9e48fd5d3bf6414db4d844b421b45f6b6a2f17d4
+vendor/lib64/libthermalfeature.so|829b2fc0aa8c863d4b4b331e0a2c00663e01efe6
+-vendor/lib/libthermalclient.so|248fda00d69a626ee8e24159b704a6ae95eceb99
+-vendor/lib64/libthermalclient.so|d042cc537de4950837a5b928f6283fb238a9c59c
 
 # Time services - from LA.UM.9.6.3.r1-04400-89xx.0
 -vendor/app/TimeService/TimeService.apk|1a5f39aa2969feee50ff81ec870b5e2669ae515e
