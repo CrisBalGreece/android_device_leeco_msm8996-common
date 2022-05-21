@@ -9,7 +9,3 @@ ro.com.google.ime.kb_pad_land_r=14
 ro.com.google.ime.kb_pad_port_b=1
 ro.com.google.ime.theme_id=5
 ro.com.google.ime.bs_theme=true
-
-# Iorap
-iorapd.perfetto.enable=true
-persist.device_config.runtime_native_boot.iorap_readahead_enable=true

@@ -1,6 +1,3 @@
-# IORap app launch prefetching using Perfetto traces and madvise
-iorapd.readahead.enable=true
-
 # OctaviOS Official Props
 ro.octavi.display.pid=1572201
 ro.octavi.maintainer=CrisBalGreece
