@@ -224,9 +224,6 @@ vendor/lib/libmmcamera_isp_sce40.so|c56210d76256807abb7cb31f9dc923adb78392fd
 vendor/lib/libmmcamera_isp_snr47.so|44f15661d64906cb1e87de1e028f87f0f022c928
 vendor/lib/libmmcamera_isp_sub_module.so|5fb215ead8c3eefb1c2a0f3c6730dd9d3a55365c
 
-# Camera prebuilt blob
-system_ext/lib64/vendor.qti.hardware.camera.device@1.0.so
-
 # CNE
 product/lib64/com.quicinc.cne.api@1.0.so:system_ext/lib64/com.quicinc.cne.api@1.0.so
 product/lib64/com.quicinc.cne.api@1.1.so:system_ext/lib64/com.quicinc.cne.api@1.1.so
