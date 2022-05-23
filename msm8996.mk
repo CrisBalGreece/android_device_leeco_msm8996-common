@@ -201,6 +201,8 @@ PRODUCT_PACKAGES += \
     memtrack.msm8996 \
     libdisplayconfig \
     libdisplayconfig.vendor \
+    libdisplayconfig.qti \
+    libdisplayconfig.qti.vendor \
     liboverlay \
     libqdMetaData.system \
     libtinyxml \
