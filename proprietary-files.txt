@@ -288,6 +288,9 @@ vendor/lib64/vendor.qti.latency@2.0.so
 # consumerir - from le_x10 (x850) - 7.1.1/LEXCNFN6061705181T/letv05181516
 -system/app/UEIQuicksetSDKLeTV/UEIQuicksetSDKLeTV.apk|b9b4a53a6465dbd9e1d1b6f1a8393313f5e72f64
 
+# Display
+/vendor/lib64/libdisplayconfig.qti.so|6b8a230de23d8bd8d911959798911f5ad5a15d95
+
 # DPM - from LA.UM.9.6.3.r1-04400-89xx.0
 -system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|74ec0d8e2ef3d7e3b0a730da9b97237921778ac4
 system_ext/bin/dpmd|8a582ec5f23d8f43922566a12840da8ced8e6ab7
