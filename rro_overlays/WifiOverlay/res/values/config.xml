@@ -38,18 +38,6 @@
 
     <!-- Indicates that AP mode MAC randomization is supported on this device -->
     <bool translatable="false" name="config_wifi_ap_mac_randomization_supported">false</bool>
-	
-    <!-- Enable adding minimum confirmation duration when sending network score to connectivity service. -->
-    <bool translatable="false" name="config_wifiMinConfirmationDurationSendNetworkScoreEnabled">true</bool>
-	
-    <!-- Wifi driver supports WPA3 Simultaneous Authentication of Equals (WPA3-SAE) for softap -->
-    <bool name="config_wifi_softap_sae_supported">true</bool>
-
-    <!-- Wifi driver Automatic channel selection (ACS) for softap to include DFS channels -->
-    <bool translatable="false" name="config_wifiSoftapAcsIncludeDfs">true</bool>
-
-	<!-- Boolean indicating that wifi only link configuratios that have exact same credentials (i.e PSK) -->
-    <bool translatable="false" name="config_wifi_only_link_same_credential_configurations">false</bool>
 
     <!-- Enable WPA2 to WPA3 auto-upgrade -->
     <bool translatable="false" name="config_wifiSaeUpgradeEnabled">false</bool>
@@ -74,5 +62,8 @@
     <!-- Integer thresholds for low network score, should be somewhat less than the entry thresholds -->
     <integer translatable="false" name="config_wifi_framework_wifi_score_bad_rssi_threshold_5GHz">-90</integer>
     <integer translatable="false" name="config_wifi_framework_wifi_score_bad_rssi_threshold_24GHz">-93</integer>
+	
+    <!-- Do not translate. Default access point SSID used for tethering -->
+    <string name="wifi_tether_configure_ssid_default" translatable="false">LeMax2</string>
 	
 </resources>
