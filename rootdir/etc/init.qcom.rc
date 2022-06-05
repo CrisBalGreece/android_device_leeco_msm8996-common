@@ -348,8 +348,15 @@ on boot
     chmod 600 /sys/class/graphics/fb1/cec/wr_msg
 
     # Access permission for input_suspend
+    mkdir /sys/class/power_supply/battery/input_suspend 0770 system system
+    mkdir /sys/power/suspend_stats 0770 system system
+    mkdir /sys/class/wakeup 0770 system system
     chown system system /sys/class/power_supply/battery/input_suspend
+    chown system system /sys/power/suspend_stats
+    chown system system /sys/class/wakeup
     chmod 0666 /sys/class/power_supply/battery/input_suspend
+    chmod 0666 /sys/power/suspend_stats
+    chmod 0666 /sys/class/wakeup
 
     # Access permission for Bluetooth
     chown bluetooth bluetooth /sys/module/bluetooth_power/parameters/power
