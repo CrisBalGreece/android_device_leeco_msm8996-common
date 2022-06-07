@@ -25,7 +25,8 @@ GCamGo
 else 
 PRODUCT_PACKAGES += \
 GCamGo \
-ViaBrowser
+ViaBrowser \
+Gboard
 endif
 
 # Additional native libraries
