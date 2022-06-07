@@ -312,6 +312,9 @@ firmware_directories /vendor/firmware_mnt/image/
 # Kmsg device
 /dev/kmsg                                               0620   root       system
 
+# Kcal
+/sys/devices/platform/kcal_ctrl.0/                      0666  system system
+
 # NPU device
 /dev/msm_npu             0644   system     system
 

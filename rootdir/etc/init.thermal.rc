@@ -1,0 +1,65 @@
+on property:sys.boot_completed=1
+
+service thermal-engine /vendor/bin/thermal-engine -c ${sys.qcom.thermalcfg:-/vendor/etc/thermal-engine.conf}
+    class main
+    user root
+    socket thermal-send-client stream 0660 system oem_2907
+    socket thermal-recv-client stream 0660 system oem_2907
+    socket thermal-recv-passive-client stream 0660 system oem_2907
+    socket thermal-send-rule stream 0660 system oem_2907
+    group system root diag
+    writepid /dev/cpuset/system-background/tasks
+	
+service energy-awareness /vendor/bin/energy-awareness
+   class main
+   user root
+   group system
+   oneshot
+
+    #Rom Stock
+on property:persist.thermal.profile=0
+    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine.conf"
+    stop thermal-engine
+    start thermal-engine
+
+    #Battery
+on property:persist.thermal.profile=1
+    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-battery.conf"
+    stop thermal-engine
+    start thermal-engine
+
+    #Balanced
+on property:persist.thermal.profile=2
+    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-balanced.conf"
+    stop thermal-engine
+    start thermal-engine
+
+    #Video
+on property:persist.thermal.profile=3
+    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-video.conf"
+    stop thermal-engine
+    start thermal-engine
+
+    #Performance
+on property:persist.thermal.profile=4
+    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-performance.conf"
+    stop thermal-engine
+    start thermal-engine
+
+    #Gaming
+on property:persist.thermal.profile=5
+    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-gaming.conf"
+    stop thermal-engine
+    start thermal-engine
+
+    #GBG Average
+on property:persist.thermal.profile=6
+    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-cbg.conf"
+    stop thermal-engine
+    start thermal-engine
+	
+    #EUI
+on property:persist.thermal.profile=7
+    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-eui.conf"
+    stop thermal-engine
+    start thermal-engine

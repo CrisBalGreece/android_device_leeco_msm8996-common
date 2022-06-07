@@ -161,10 +161,17 @@ PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
     init.qcom.rc \
     init.qcom.sh \
+    init.profile.sh \
+    init.thermal.sh \
+    init.cdlapref.sh \
+    init.cdla.sh \
     init.qcom.power.rc \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
     ueventd.qcom.rc \
+    init.spectrum.rc \
+    init.leeco.rc \
+    init.thermal.rc \
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
@@ -181,7 +188,7 @@ PRODUCT_PACKAGES += \
 
 # Device settings
 PRODUCT_PACKAGES += \
-    DeviceSettings
+    LeEcoSettings
 
 # Component overrides
 PRODUCT_COPY_FILES += \
@@ -471,7 +478,14 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0.vendor
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
+    $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
+    $(LOCAL_PATH)/configs/thermal-engine-cbg.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-cbg.conf \
+    $(LOCAL_PATH)/configs/thermal-engine-eui.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-eui.conf \
+    $(LOCAL_PATH)/configs/thermal-engine-video.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-video.conf \
+    $(LOCAL_PATH)/configs/thermal-engine-balanced.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-balanced.conf \
+    $(LOCAL_PATH)/configs/thermal-engine-battery.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-battery.conf \
+    $(LOCAL_PATH)/configs/thermal-engine-performance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-performance.conf \
+    $(LOCAL_PATH)/configs/thermal-engine-gaming.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-gaming.conf
 
 # Trust HAL
 PRODUCT_PACKAGES += \

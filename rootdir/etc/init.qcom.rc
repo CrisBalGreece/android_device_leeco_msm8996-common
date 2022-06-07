@@ -28,6 +28,9 @@
 import /vendor/etc/init/hw/init.qcom.power.rc
 import /vendor/etc/init/hw/init.qcom.usb.rc
 import /vendor/etc/init/hw/init.device.rc
+import /vendor/etc/init/hw/init.spectrum.rc
+import /vendor/etc/init/hw/init.leeco.rc
+import /vendor/etc/init/hw/init.thermal.rc
 
 on early-init
     mount debugfs debugfs /sys/kernel/debug
@@ -499,16 +502,6 @@ service vendor.qseecomd /vendor/bin/qseecomd
    group root
    writepid /dev/cpuset/system-background/tasks
 
-service thermal-engine /vendor/bin/thermal-engine
-    class main
-    user root
-    group root
-    socket thermal-send-client stream 0660 system oem_2907
-    socket thermal-recv-client stream 0660 system oem_2907
-    socket thermal-recv-passive-client stream 0660 system oem_2907
-    socket thermal-send-rule stream 0660 system oem_2907
-    writepid /dev/cpuset/system-background/tasks
-
 service adsprpcd /vendor/bin/adsprpcd
    class main
    user media
@@ -538,12 +531,6 @@ on property:init.svc.zygote=running
 
 on property:init.svc.zygote=restarting
     stop ppd
-
-service energy-awareness /vendor/bin/energy-awareness
-    class main
-    user root
-    group system
-    oneshot
 
 on property:persist.vendor.radio.atfwd.start=false
     stop vendor.atfwd
@@ -661,14 +648,3 @@ on property:vendor.sys.listeners.registered=*
 
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
-
-on property:persist.sys.le_fast_chrg_enable=1
-    write /sys/class/power_supply/le_ab/le_quick_charge_mode 0
-
-on property:persist.sys.le_fast_chrg_enable=0
-    write /sys/class/power_supply/le_ab/le_quick_charge_mode 1
-	
-#Cam2API switch from DT DeviceSettings
-on property:persist.camera.HAL3.enabled=*
-    restart qcamerasvr
-    restart vendor.camera-provider-2-4
