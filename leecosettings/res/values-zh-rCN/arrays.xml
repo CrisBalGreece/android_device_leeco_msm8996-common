@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="spectrum_profiles">
+	    <item>ROM选项</item>
+		<item>省电</item>
+		<item>均衡</item>
+		<item>视频</item>
+		<item>性能</item>
+		<item>游戏</item>		
+		<item>CBG的调度</item>	
+		<item>EUI 30s的调度</item>
+	</string-array>
+	<string-array name="spectrum_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+	</string-array>
+	
+	<string-array name="thermal_profiles">
+        <item>ROM选项</item>
+		<item>省电</item>
+		<item>均衡</item>
+		<item>视频</item>
+		<item>性能</item>
+		<item>游戏</item>		
+		<item>CBG的调度</item>	
+		<item>EUI 30s的调度</item>
+	</string-array>
+	
+	<string-array name="thermal_values">
+	<item>0</item>
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+	</string-array>
+</resources>

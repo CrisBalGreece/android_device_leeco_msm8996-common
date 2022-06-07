@@ -177,6 +177,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.soc.manufacturer=Qualcomm \
     ro.soc.model=MSM8996
 
+# CPU profiles
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.spectrum.profile=0 \
+persist.thermal.profile=0
+
 # Surfaceflinger
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_app_phase_offset_ns=1500000 \
