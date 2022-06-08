@@ -516,7 +516,8 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    android.hardware.tetheroffload.control@1.0 \
+    android.hardware.tetheroffload.control@1.0.vendor \
+    android.hardware.tetheroffload.config@1.0.vendor \
     android.hardware.wifi@1.0-service \
     libqsap_sdk \
     libQWiFiSoftApCfg \
