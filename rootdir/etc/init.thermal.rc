@@ -1,6 +1,6 @@
 on property:sys.boot_completed=1
 
-service thermal-engine /vendor/bin/thermal-engine -c ${sys.qcom.thermalcfg:-/vendor/etc/thermal-engine.conf}
+service thermal-engine /vendor/bin/thermal-engine -c ${sys.qcom.thermalcfg:-/vendor/etc/thermal-engine-performance.conf}
     class main
     user root
     socket thermal-send-client stream 0660 system oem_2907
