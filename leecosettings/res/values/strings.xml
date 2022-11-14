@@ -44,10 +44,6 @@
     <string name="live_display_title">Display</string>
     <string name="live_display_summary">Live display settings.</string>
 	
-    <!-- Screen Gestures -->
-    <string name="gestures_title">Screen gestures</string>
-    <string name="gestures_summary">Enable/Disable screen gestures.</string>
-	
     <!-- Sound -->
     <string name="cdla_title">CDLA</string>
     <string name="cdla_summary">For original EUI Audio.</string>
