@@ -21,10 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 # PrebuiltApp
 ifeq ($(WITH_GAPPS), true)  
 PRODUCT_PACKAGES += \
-GCamGo
+GCamGo \
+Gestures
 else 
 PRODUCT_PACKAGES += \
 GCamGo \
+Gestures \
 ViaBrowser \
 Gboard
 endif
