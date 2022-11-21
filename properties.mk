@@ -32,6 +32,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio_hal.period_size=192 \
     vendor.voice.path.for.pcm.voip=true
 
+PRODUCT_ODM_PROPERTIES += \
+    ro.vendor.qti.va_odm.support=1
+
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     bt.max.hfpclient.connections=1 \
@@ -45,7 +48,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=rome
 
 # BPF
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.kernel.ebpf.supported=false
 
 # Camera
@@ -66,14 +69,16 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.soc.model=MSM8996
 
 # CNE
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.vendor.cne.feature=1
 
 # Data modules
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.iwlan.enable=true \
-    persist.data.mode=concurrent \
     persist.data.netmgrd.qos.enable=true \
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.data.mode=concurrent \
     ro.vendor.use_data_netmgrd=true
 
 # Devinfo for init
@@ -106,7 +111,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=1 \
     debug.renderengine.backend=threaded \
-    debug.sf.enable_hwc_vds=1 \
     debug.sf.hw=1 \
     dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
@@ -119,9 +123,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.perf_hint_window=50 \
     vendor.video.disable.ubwc=1
 
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    debug.sf.enable_hwc_vds=1
+
 # Graphics (OpenGLES)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610
+
+# Haters gonna hate..
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sys.sdcardfs=true
 
 # IMS / VoLTE
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -167,10 +178,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.redir_party_num=1 \
     persist.vendor.radio.sib16_support=1 \
-    ril.subscription.types=NV,RUIM \
     vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     ro.telephony.call_ring.multiple=false \
     ro.telephony.use_old_mnc_mcc_format=true \
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    DEVICE_PROVISIONED=1 \
+    ril.subscription.types=NV,RUIM \
     telephony.lteOnCdmaDevice=1
 
 # Sensors
