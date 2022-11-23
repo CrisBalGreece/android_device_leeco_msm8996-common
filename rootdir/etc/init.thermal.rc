@@ -1,20 +1,3 @@
-on property:sys.boot_completed=1
-
-service thermal-engine /vendor/bin/thermal-engine -c ${sys.qcom.thermalcfg:-/vendor/etc/thermal-engine-performance.conf}
-    class main
-    user root
-    socket thermal-send-client stream 0660 system oem_2907
-    socket thermal-recv-client stream 0660 system oem_2907
-    socket thermal-recv-passive-client stream 0660 system oem_2907
-    socket thermal-send-rule stream 0660 system oem_2907
-    group system root diag
-    writepid /dev/cpuset/system-background/tasks
-	
-service energy-awareness /vendor/bin/energy-awareness
-   class main
-   user root
-   group system
-   oneshot
 
     #Rom Stock
 on property:persist.thermal.profile=0
