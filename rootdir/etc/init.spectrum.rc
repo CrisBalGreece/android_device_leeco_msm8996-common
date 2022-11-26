@@ -55,8 +55,6 @@ on property:persist.spectrum.profile=0
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1593600
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 307200
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/align_windows 0
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/boostpulse_duration 80000
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_sched_load 1
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_migration_notif 1
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay 19000
@@ -80,8 +78,6 @@ on property:persist.spectrum.profile=0
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "interactive"
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq 2150400
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 307200
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/align_windows 0
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/boostpulse_duration 80000
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_sched_load 1
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_migration_notif 1
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/above_hispeed_delay "19000 1400000:39000 1700000:39000 2100000:79000"
@@ -192,8 +188,6 @@ on property:persist.spectrum.profile=1
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1228800
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 307200
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/align_windows 0
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/boostpulse_duration 80000
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_sched_load 0
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_migration_notif 1
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay "19000 480000:20000 960000:20000"
@@ -214,8 +208,6 @@ on property:persist.spectrum.profile=1
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "interactive"
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq 1632000
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 307200
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/align_windows 0
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/boostpulse_duration 80000
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_sched_load 0
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_migration_notif 1
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/above_hispeed_delay "25000 1400000:49000 1700000:49000 2100000:79000"
@@ -324,8 +316,6 @@ on property:persist.spectrum.profile=2
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1593600
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 307200
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/align_windows 0
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/boostpulse_duration 80000
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_sched_load 0
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_migration_notif 1
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay "19000 480000:20000 960000:20000"
@@ -346,8 +336,6 @@ on property:persist.spectrum.profile=2
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "interactive"
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq 2150400
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 307200
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/align_windows 0
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/boostpulse_duration 80000
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_sched_load 0
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_migration_notif 1
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/above_hispeed_delay "19000 1036800:20000 1400000:49000 1700000:49000 2100000:79000"
@@ -387,8 +375,6 @@ on property:persist.spectrum.profile=2
     write /proc/sys/kernel/sched_small_wakee_task_load 15
     write /proc/sys/vm/swappiness 60
     write /proc/sys/vm/vfs_cache_pressure 1000
-    write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
-    write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 81250
 
     # Configure governor settings for big.LITTLE cluster
     write /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres 55
@@ -456,8 +442,6 @@ on property:persist.spectrum.profile=3
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
 	write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1593600
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 960000
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/align_windows 0
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/boostpulse_duration 0
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/target_loads "19000 480000:20000 960000:20000"
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_slack -1
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/hispeed_freq 1593600
@@ -478,8 +462,6 @@ on property:persist.spectrum.profile=3
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "interactive"
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq 2150400
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 1036800
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/align_windows 0
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/boostpulse_duration 0
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/target_loads "19000 1400000:20000 1700000:20000 2100000:20000"
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/timer_slack -1
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/hispeed_freq 2150400
@@ -519,8 +501,6 @@ on property:persist.spectrum.profile=3
     write /proc/sys/kernel/sched_small_wakee_task_load 10
     write /proc/sys/vm/swappiness 60
     write /proc/sys/vm/vfs_cache_pressure 1000
-    write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
-	write /sys/module/lowmemorykiller/parameters/vmpressure_file_min "22149,30059,38760,58536,67238,79104"
 
     # Configure governor settings for big.LITTLE cluster
     write /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres 0
@@ -588,8 +568,6 @@ on property:persist.spectrum.profile=4
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1593600
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 960000
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/align_windows 0
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/boostpulse_duration 0
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_sched_load 0
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_migration_notif 1
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay "19000 480000:20000 960000:20000"
@@ -610,8 +588,6 @@ on property:persist.spectrum.profile=4
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "interactive"
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq 2150400
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 1036800
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/align_windows 0
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/boostpulse_duration 0
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_sched_load 0
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_migration_notif 1
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/above_hispeed_delay "19000 1400000:20000 1700000:20000 2100000:20000"
@@ -651,8 +627,6 @@ on property:persist.spectrum.profile=4
     write /proc/sys/kernel/sched_upmigrate_min_nice 9
     write /proc/sys/vm/swappiness 60
     write /proc/sys/vm/vfs_cache_pressure 1000
-    write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
-	write /sys/module/lowmemorykiller/parameters/vmpressure_file_min "22149,30059,38760,58536,67238,79104"
 
     # Configure governor settings for big.LITTLE cluster
     write /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres 0
@@ -669,10 +643,6 @@ on property:persist.spectrum.profile=4
     write /sys/devices/system/cpu/cpu2/sched_static_cluster_pwr_cost 20
     write /sys/devices/system/cpu/cpu3/sched_static_cpu_pwr_cost 10
     write /sys/devices/system/cpu/cpu3/sched_static_cluster_pwr_cost 20
-    write /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres 0
-    write /sys/devices/system/cpu/cpu0/core_ctl/busy_up_thres 0
-    write /sys/devices/system/cpu/cpu2/core_ctl/busy_down_thres 0
-    write /sys/devices/system/cpu/cpu2/core_ctl/busy_up_thres 0
 	
     # Configure cpu cores
     write /sys/devices/system/cpu/cpu0/core_ctl/min_cpus 2
@@ -723,8 +693,6 @@ on property:persist.spectrum.profile=5
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1593600
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 960000
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/align_windows 0
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/boostpulse_duration 0
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_sched_load 0
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_migration_notif 1
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay "19000 480000:20000 960000:20000"
@@ -745,8 +713,6 @@ on property:persist.spectrum.profile=5
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "interactive"
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq 2150400
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 1036800
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/align_windows 0
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/boostpulse_duration 0
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_sched_load 0
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_migration_notif 1
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/above_hispeed_delay "19000 1400000:20000 1700000:20000 2100000:20000"
@@ -786,8 +752,6 @@ on property:persist.spectrum.profile=5
     write /proc/sys/kernel/sched_small_wakee_task_load 10
     write /proc/sys/vm/swappiness 60
     write /proc/sys/vm/vfs_cache_pressure 1000
-    write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
-	write /sys/module/lowmemorykiller/parameters/vmpressure_file_min "22149,30059,38760,58536,67238,79104"
 
     # Configure governor settings for big.LITTLE cluster
     write /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres 0
@@ -820,19 +784,16 @@ on property:persist.spectrum.profile=5
 on property:persist.spectrum.profile=6
 
     # Set Balance power settings
-    write /sys/module/cpu_boost/parameters/input_boost_freq 1036800
-    write /sys/module/cpu_input_boost/parameters/input_boost_duration 64
-    write /sys/module/cpu_input_boost/parameters/input_boost_freq_hp 1036800
-    write /sys/module/cpu_input_boost/parameters/input_boost_freq_lp 1036800
-    write /sys/module/cpu_boost/parameters/input_boost_ms 20
+    write /sys/module/cpu_boost/parameters/input_boost_freq "0:1324800 2:1324800"
+    write /sys/module/cpu_boost/parameters/input_boost_ms 40
+    write /sys/module/cpu_boost/parameters/input_boost_enabled 0
+    write /sys/module/msm_performance/parameters/touchboost 0
 	
     # Enable devrfreq boost
     write /sys/module/devfreq_boost/parameters/boost_enabled "Y"
-    write /sys/module/devfreq_boost/parameters/boost_all "Y"
 
     # Disable thermal and BCL hotplug
     write /sys/module/msm_thermal/core_control/enabled 0
-    write /sys/module/msm_thermal/parameters/enabled "N"
 
     # Enable cores
     write /sys/devices/system/cpu/cpu0/core_ctl/min_cpus 2
@@ -855,45 +816,41 @@ on property:persist.spectrum.profile=6
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1593600
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 307200
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/align_windows 0
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/boostpulse_duration 80000
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_sched_load 0
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_sched_load 1
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_migration_notif 1
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay "19000 960000:39000 1228800:49000 1401600:69000"
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay "19000 480000:20000 960000:20000"
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load 100
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_rate 40000
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_rate 30000
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_slack -1
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/hispeed_freq 960000
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/io_is_busy 0
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/io_is_busy 1
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/boost 0
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/fast_ramp_down 0
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/target_loads "88 307200:40 400000:45 480000:55 552600:59 652800:67 729600:72 844800:75 960000:91 1401600:94"
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/target_loads "80 1036800:80 1593600:80"
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/min_sample_time 20000
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/max_freq_hysteresis 0
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/max_freq_hysteresis 80000
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/ignore_hispeed_on_notif 0
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/enable_prediction 0
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/enable_prediction 1
 
     # Configure governor settings for big cluster
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "interactive"
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq 2150400
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 307200
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/align_windows 0
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/boostpulse_duration 80000
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_sched_load 0
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_sched_load 1
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_migration_notif 1
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/above_hispeed_delay "29000 940800:39000 1401600:49000 1555200:89000 1824000:89000"
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/above_hispeed_delay "19000 1036800:20000 1400000:49000 1700000:49000 2100000:79000"
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/go_hispeed_load 100
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/timer_rate 40000
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/hispeed_freq 940800
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/io_is_busy 0
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/target_loads "90 307200:50 400000:50 480000:65 552600:65 652800:65 729600:69 806400:75 883200:60 1401600:94"
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/min_sample_time 0
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/timer_rate 30000
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/hispeed_freq 1036800
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/io_is_busy 1
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/target_loads "80 1036800:80 1824000:80 1920000:90 2150400:90"
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/min_sample_time 19000
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/boost 0
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/timer_slack -1
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/fast_ramp_down 0
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/max_freq_hysteresis 0
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/max_freq_hysteresis 80000
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/ignore_hispeed_on_notif 0
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/enable_prediction 0
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/enable_prediction 1
 
     # Re-enable thermal and BCL hotplug
     write /sys/module/msm_thermal/core_control/enabled 1
@@ -901,12 +858,12 @@ on property:persist.spectrum.profile=6
 
     # Set big.LITTLE scheduler parameters
     write /sys/class/devfreq/soc:qcom,cpubw/governor "bw_hwmon"
-    write /proc/sys/kernel/sched_window_stats_policy 2
+    write /proc/sys/kernel/sched_window_stats_policy 1
     write /proc/sys/kernel/sched_boost 0
     write /proc/sys/kernel/sched_migration_fixup 1
     write /proc/sys/kernel/sched_upmigrate 85
-    write /proc/sys/kernel/sched_upmigrate_min_nice 10
     write /proc/sys/kernel/sched_downmigrate 65
+    write /proc/sys/kernel/sched_upmigrate_min_nice 9
     write /proc/sys/kernel/sched_freq_inc_notify 600000
     write /proc/sys/kernel/sched_freq_dec_notify 410000
     write /proc/sys/kernel/sched_spill_nr_run 5
@@ -915,17 +872,15 @@ on property:persist.spectrum.profile=6
     write /proc/sys/kernel/sched_big_waker_task_load 35
     write /proc/sys/kernel/sched_small_task 7
     write /proc/sys/kernel/sched_wakeup_load_threshold 110
-    write /proc/sys/kernel/sched_small_wakee_task_load 4
+    write /proc/sys/kernel/sched_small_wakee_task_load 100
     write /proc/sys/vm/swappiness 60
 	write /proc/sys/vm/vfs_cache_pressure 1000
-    write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
-	write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 81250
 	
 	# Configure governor settings for big.LITTLE cluster
     write /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres 45
     write /sys/devices/system/cpu/cpu0/core_ctl/busy_up_thres 55
     write /sys/devices/system/cpu/cpu2/core_ctl/busy_down_thres 45
-    write /sys/devices/system/cpu/cpu2/core_ctl/busy_up_thres 65
+    write /sys/devices/system/cpu/cpu2/core_ctl/busy_up_thres 55
 
     # Configure cpu sched
     write /sys/devices/system/cpu/cpu0/sched_static_cpu_pwr_cost 10
@@ -986,8 +941,6 @@ on property:persist.spectrum.profile=7
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1593600
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 307200
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_sched_load 1
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/align_windows 0
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/boostpulse_duration 80000
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_migration_notif 1
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay 19000
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/boost 0
@@ -1011,8 +964,6 @@ on property:persist.spectrum.profile=7
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq 2150400
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 307200
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_sched_load 1
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/align_windows 0
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/boostpulse_duration 80000
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_migration_notif 1
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/above_hispeed_delay "19000 1400000:39000 1700000:19000"
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/boost 0
