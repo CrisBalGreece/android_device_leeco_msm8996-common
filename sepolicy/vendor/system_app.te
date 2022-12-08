@@ -26,3 +26,4 @@ allow system_app sysfs_zram:file { getattr open read };
 #A12
 allow system_app zygote:unix_stream_socket { getopt };
 allow system_app proc_pagetypeinfo:file { read };
+allow system_app sysfs:file { open read getattr write };
