@@ -44,10 +44,6 @@
     <string name="live_display_title">Οθόνη</string>
     <string name="live_display_summary">Ρυθμίσεις οθόνης περιβάλλοντος.</string>
 	
-    <!-- Screen Gestures -->
-    <string name="gestures_title">Κινήσεις οθόνης</string>
-    <string name="gestures_summary">Απενεργ./Ενεργ/ση κινήσεων οθόνης.</string>
-	
     <!-- Sound -->
     <string name="cdla_title">Ακουστικά CDLA</string>
     <string name="cdla_summary">Για ήχο CDLA, όπως ήταν στην EUI.</string>

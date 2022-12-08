@@ -44,10 +44,6 @@
     <string name="live_display_title">Oтображать</string>
     <string name="live_display_summary">Настройки отображения в реальном времени.</string>
 	
-    <!-- Screen Gestures -->
-    <string name="gestures_title">Экранные жесты</string>
-    <string name="gestures_summary">Включить/отключить экранные жесты.</string>
-	
     <!-- Sound -->
     <string name="cdla_title">CDLA</string>
     <string name="cdla_summary">Для оригинального аудио EUI.</string>
