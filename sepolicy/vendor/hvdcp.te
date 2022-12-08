@@ -1,5 +1,7 @@
 r_dir_file(hvdcp, sysfs_batteryinfo)
 
+set_prop(hvdcp, default_prop)
 allow hvdcp sysfs_batteryinfo:file w_file_perms;
+allow hvdcp default_prop:file read;
 
 dontaudit hvdcp self:capability { dac_override };

@@ -9,6 +9,8 @@ get_prop(vendor_init, bluetooth_prop)
 get_prop(vendor_init, default_prop)
 get_prop(vendor_init, camera_prop)
 set_prop(vendor_init, camera_prop)
+get_prop(vendor_init, bluetooth_prop)
+get_prop(vendor_init, camera_prop)
 allow vendor_init persist_debug_prop:file { read };
 allow vendor_init bluetooth_prop:file { read };
 allow vendor_init default_prop:file { read };

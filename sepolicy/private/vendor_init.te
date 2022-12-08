@@ -1,0 +1,2 @@
+#A12
+get_prop(vendor_init, init_service_status_private_prop)

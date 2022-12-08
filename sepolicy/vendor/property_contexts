@@ -17,3 +17,6 @@ sys.thermal.                       u:object_r:thermal_normal_prop:s0
 # WiFi
 wifi.active.interface              u:object_r:wifi_prop:s0
 persist.vendor.wigig.npt.enable    u:object_r:vendor_default_prop:s0
+
+# DPM
+persist.env.fastdorm.enabled       u:object_r:vendor_default_prop:s0
