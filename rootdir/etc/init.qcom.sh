@@ -177,24 +177,6 @@ case "$target" in
              hw_platform=`cat /sys/devices/system/soc/soc0/hw_platform`
         fi
 
-        case "$soc_id" in
-             "317" | "324" | "325" | "326" | "318" | "327" )
-                  case "$hw_platform" in
-                       "Surf")
-                                    setprop qemu.hw.mainkeys 0
-                                    ;;
-                       "MTP")
-                                    setprop qemu.hw.mainkeys 0
-                                    ;;
-                       "RCM")
-                                    setprop qemu.hw.mainkeys 0
-                                    ;;
-                       "QRD")
-                                    setprop qemu.hw.mainkeys 0
-                                    ;;
-                  esac
-                  ;;
-       esac
         start_msm_irqbalance
         ;;
     "apq8084")
@@ -227,26 +209,6 @@ case "$target" in
         if [ -f /sys/devices/soc0/hw_platform ]; then
              hw_platform=`cat /sys/devices/soc0/hw_platform`
         fi
-        case "$soc_id" in
-             "239")
-                  case "$hw_platform" in
-                       "Surf")
-                            case "$platform_subtype_id" in
-                                 "1")
-                                      setprop qemu.hw.mainkeys 0
-                                      ;;
-                            esac
-                            ;;
-                       "MTP")
-                          case "$platform_subtype_id" in
-                               "3")
-                                    setprop qemu.hw.mainkeys 0
-                                    ;;
-                          esac
-                          ;;
-                  esac
-                  ;;
-        esac
         ;;
     "msm8994" | "msm8992" | "msm8998" | "apq8098_latv" | "sdm845" | "sdm710" | "qcs605" | "msmnile" | "talos")
         start_msm_irqbalance
@@ -288,26 +250,6 @@ case "$target" in
         else
              hw_platform=`cat /sys/devices/system/soc/soc0/hw_platform`
         fi
-	if [ "$low_ram" != "true" ]; then
-             case "$soc_id" in
-                  "294" | "295" | "303" | "307" | "308" | "309" | "313" | "320" | "353" | "354" | "363" | "364")
-                       case "$hw_platform" in
-                            "Surf")
-                                    setprop qemu.hw.mainkeys 0
-                                    ;;
-                            "MTP")
-                                    setprop qemu.hw.mainkeys 0
-                                    ;;
-                            "RCM")
-                                    setprop qemu.hw.mainkeys 0
-                                    ;;
-                            "QRD")
-                                    setprop qemu.hw.mainkeys 0
-                                    ;;
-                       esac
-                       ;;
-             esac
-        fi
         ;;
     "msm8953")
 	start_msm_irqbalance_8939
@@ -322,24 +264,6 @@ case "$target" in
         else
              hw_platform=`cat /sys/devices/system/soc/soc0/hw_platform`
         fi
-        case "$soc_id" in
-             "293" | "304" | "338" | "351" | "349" | "350" )
-                  case "$hw_platform" in
-                       "Surf")
-                                    setprop qemu.hw.mainkeys 0
-                                    ;;
-                       "MTP")
-                                    setprop qemu.hw.mainkeys 0
-                                    ;;
-                       "RCM")
-                                    setprop qemu.hw.mainkeys 0
-                                    ;;
-                       "QRD")
-                                    setprop qemu.hw.mainkeys 0
-                                    ;;
-                  esac
-                  ;;
-       esac
         ;;
     "sdm710")
         if [ -f /sys/devices/soc0/soc_id ]; then
@@ -353,24 +277,6 @@ case "$target" in
         else
              hw_platform=`cat /sys/devices/system/soc/soc0/hw_platform`
         fi
-        case "$soc_id" in
-             "336" | "337" | "347" | "360" )
-                  case "$hw_platform" in
-                       "Surf")
-                                    setprop qemu.hw.mainkeys 0
-                                    ;;
-                       "MTP")
-                                    setprop qemu.hw.mainkeys 0
-                                    ;;
-                       "RCM")
-                                    setprop qemu.hw.mainkeys 0
-                                    ;;
-                       "QRD")
-                                    setprop qemu.hw.mainkeys 0
-                                    ;;
-                  esac
-                  ;;
-       esac
         ;;
 esac
 

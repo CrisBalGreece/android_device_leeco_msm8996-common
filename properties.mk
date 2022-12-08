@@ -127,6 +127,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610
 
+# HW keys
+PRODUCT_PROPERTY_OVERRIDES += \
+    qemu.hw.mainkeys=1
+
 # Haters gonna hate..
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sys.sdcardfs=true
