@@ -50,13 +50,6 @@
     <!-- Button brightness -->
     <bool name="config_button_brightness_support">true</bool>
     <integer name="config_button_brightness_default">17</integer>
-	
-    <!-- True if the device supports system navigation keys. -->
-    <bool name="config_supportSystemNavigationKeys">true</bool>
-
-    	<!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
-         autodetected from the Configuration. -->
-    <bool name="config_showNavigationBar">true</bool>
 
     <!-- Control whether the always on display mode is available. This should only be enabled on
          devices where the display has been tuned to be power efficient in DOZE and/or DOZE_SUSPEND
