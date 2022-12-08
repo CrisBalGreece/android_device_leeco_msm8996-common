@@ -118,6 +118,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610
 
+# HW keys
+PRODUCT_PROPERTY_OVERRIDES += \
+    qemu.hw.mainkeys=1
+
 # IMS / VoLTE
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
