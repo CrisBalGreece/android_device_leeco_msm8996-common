@@ -15,4 +15,7 @@
 <!-- Default access point SSID used for tethering -->
     <string name="wifi_tether_configure_ssid_default">LeMax2</string>
 	
+<!-- Device Info screen. Used for a status item's value when the proper value is not known -->
+    <string name="device_info_default">LEX820</string>
+	
 </resources>

@@ -129,7 +129,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # HW keys
 PRODUCT_PROPERTY_OVERRIDES += \
-    qemu.hw.mainkeys=1
+    qemu.hw.mainkeys=0
 
 # Haters gonna hate..
 PRODUCT_PROPERTY_OVERRIDES += \
