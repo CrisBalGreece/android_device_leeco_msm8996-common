@@ -171,7 +171,7 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc \
     init.spectrum.rc \
     init.leeco.rc \
-    init.thermal.rc \
+    init.thermal.rc
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
