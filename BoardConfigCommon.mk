@@ -63,8 +63,9 @@ TARGET_KERNEL_SOURCE := kernel/leeco/msm8996
 #TARGET_KERNEL_CLANG_CUSTOM := true
 #TARGET_KERNEL_CLANG_VERSION := r383902
 TARGET_COMPILE_WITH_MSM_KERNEL := true
-TARGET_KERNEL_ADDITIONAL_FLAGS := \
-    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+TARGET_KERNEL_LLVM_BINUTILS := false
+#TARGET_KERNEL_ADDITIONAL_FLAGS := \
+    #HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
