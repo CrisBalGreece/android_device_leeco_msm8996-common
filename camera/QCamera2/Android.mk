@@ -26,7 +26,7 @@ LOCAL_SRC_FILES += \
         HAL3/QCamera3CropRegionMapper.cpp \
         HAL3/QCamera3StreamMem.cpp
 
-LOCAL_CFLAGS := -Wall -Wextra -Wno-unused-parameter -Wno-unused-variable -Wno-compound-token-split-by-macro
+LOCAL_CFLAGS := -Wall -Wextra -Wno-unused-parameter -Wno-unused-variable -Wno-compound-token-split-by-macro -Wunused-but-set-variable -Wstring-concatenation
 
 ifeq ($(TARGET_DEVICE), x2)
 LOCAL_CFLAGS += -DDEVICE_X2
