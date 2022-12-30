@@ -147,6 +147,8 @@ USE_DEVICE_SPECIFIC_GPS := true
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(PLATFORM_PATH)/framework_manifest.xml
 DEVICE_MANIFEST_FILE := $(PLATFORM_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(PLATFORM_PATH)/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(PLATFORM_PATH)/configs/device_framework_compatibility_matrix.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(PLATFORM_PATH):libinit_leeco_msm8996
@@ -196,8 +198,8 @@ VENDOR_SECURITY_PATCH := 2016-10-01
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 
 BOARD_VENDOR_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/vendor
-PRODUCT_PRIVATE_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/private
-PRODUCT_PUBLIC_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/public
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/private
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/public
 
 # Ignore SELinux neverallows because msm8996 is legacy
 ifneq ($(TARGET_BUILD_VARIANT),user)
