@@ -57,17 +57,11 @@
     </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.drm</name>
-        <transport>hwbinder</transport>
-        <version>1.4</version>
+        <version>1.0-4</version>
         <interface>
             <name>ICryptoFactory</name>
             <instance>clearkey</instance>
         </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hardware.drm</name>
-        <transport>hwbinder</transport>
-        <version>1.4</version>
         <interface>
             <name>IDrmFactory</name>
             <instance>clearkey</instance>
