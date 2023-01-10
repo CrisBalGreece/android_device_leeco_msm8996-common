@@ -2,4 +2,4 @@ set_prop(hal_perf_default, vendor_mpctl_prop)
 set_prop(hal_perf_default, hal_power_default)
 
 dontaudit hal_perf_default self:capability { dac_override dac_read_search };
-allow hal_perf_default hal_power_default:dir { search };
+allow hal_perf_default hal_power_default:dir { search read };
