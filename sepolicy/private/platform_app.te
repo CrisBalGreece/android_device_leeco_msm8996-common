@@ -1,3 +1,0 @@
-allow platform_app sysfs_kgsl:dir search;
-allow platform_app sysfs_ir_enable:file { read write };
-allow platform_app zygote:unix_stream_socket getopt;
