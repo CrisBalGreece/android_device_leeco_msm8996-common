@@ -64,7 +64,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.charger.enable_suspend=true
 
 # CNE
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.cne.feature=1
 
 # Data modules
@@ -140,6 +140,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1 \
+    persist.dbg.ims_volte_enable=1 \
     persist.radio.VT_ENABLE=1 \
     persist.radio.VT_HYBRID_ENABLE=1 \
     persist.vendor.qti.telephony.vt_cam_interface=1
@@ -159,10 +160,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
-    DEVICE_PROVISIONED=1 \
     persist.data.qmi.adb_logmask=0 \
-    persist.net.doxlat=true \
-    persist.radio.apm_sim_not_pwdn=1 \
     persist.radio.csvt.enabled=false \
     persist.radio.REVERSE_QMI=0 \
     persist.radio.ROTATION_ENABLE=1 \
@@ -186,7 +184,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     DEVICE_PROVISIONED=1 \
     ril.subscription.types=NV,RUIM \
-    telephony.lteOnCdmaDevice=1
+    telephony.lteOnCdmaDevice=1 \
+    persist.net.doxlat=true \
+    persist.radio.apm_sim_not_pwdn=1
 
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
