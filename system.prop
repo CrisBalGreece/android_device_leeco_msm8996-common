@@ -3,3 +3,7 @@ ro.octavi.display.pid=1572201
 ro.octavi.maintainer=CrisBalGreece
 ro.octavi.hw.cam=21Mp,8Mp 
 ro.octavi.hw.cpu=Snapdragon 820
+
+ro.boot.verifiedbootstate=green
+ro.boot.veritymode=enforcing
+vendor.boot.vbmeta.device_state=locked
