@@ -8,3 +8,6 @@ dontaudit rild vendor_file:file { ioctl };
 get_prop(rild, vendor_radio_prop)
 set_prop(rild, vendor_radio_prop)
 allow rild vendor_radio_prop:property_service { set };
+allow rild default_prop:file read;
+allow rild system_prop:file read;
+allow rild vendor_toolbox_exec:file execute_no_trans;
