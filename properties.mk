@@ -200,7 +200,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # CPU profiles
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.spectrum.profile=0 \
-    persist.thermal.profile=0
+    persist.thermal.profile=4
 
 # Surfaceflinger
 PRODUCT_PROPERTY_OVERRIDES += \

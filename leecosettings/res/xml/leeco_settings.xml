@@ -96,7 +96,7 @@
             android:icon="@drawable/ic_leeco_thermal"
 			android:title="@string/thermal_title"
 			android:summary="@string/thermal_summary"
-			android:defaultValue="0"
+			android:defaultValue="4"
 			android:entries="@array/thermal_profiles"
 			android:entryValues="@array/thermal_values"
 			android:dialogTitle="@string/thermal_dialogTitle" />
