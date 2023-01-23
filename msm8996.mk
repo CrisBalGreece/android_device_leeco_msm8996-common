@@ -205,6 +205,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl:64 \
     android.hardware.drm@1.0-service \
+    android.hardware.drm@1.2.vendor \
     android.hardware.drm@1.3-service.clearkey \
     android.hardware.drm@1.3.vendor
 
@@ -311,6 +312,7 @@ PRODUCT_COPY_FILES += \
 
 # Net
 PRODUCT_PACKAGES += \
+    android.system.net.netd@1.0 \
     android.system.net.netd@1.1.vendor \
     libandroid_net \
     netutils-wrapper-1.0
