@@ -1,1 +1,2 @@
+typeattribute hal_drm_widevine data_between_core_and_vendor_violators;
 allow hal_drm_widevine firmware_file:lnk_file { r_file_perms };

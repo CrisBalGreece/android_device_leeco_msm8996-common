@@ -1,3 +1,4 @@
+typeattribute vendor_init data_between_core_and_vendor_violators;
 get_prop(vendor_init, bluetooth_prop)
 get_prop(vendor_init, camera_prop)
 
