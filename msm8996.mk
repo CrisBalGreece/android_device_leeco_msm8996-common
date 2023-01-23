@@ -160,10 +160,6 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-service.leeco_8996 \
     ConsumerirTransmitter
 
-# CryptfsHW
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
-
 # Device settings
 PRODUCT_PACKAGES += \
     DeviceSettings
