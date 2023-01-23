@@ -1,6 +1,6 @@
 # Copyright (C) 2009 The Android Open Source Project
 # Copyright (c) 2011, The Linux Foundation. All rights reserved.
-# Copyright (C) 2017-2020 The LineageOS Project
+# Copyright (C) 2017-2022 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -56,7 +56,7 @@ abort("Error: Vendor partition doesn\'t exist! Please reboot to recovery and fla
 
 def AddModemAssertion(info):
   android_info = info.input_zip.read("OTA/android-info.txt").decode('UTF-8')
-  m = re.search(r'require\s+version-modem\s*=\s*(.+)', android_info)
+  m = re.search(r'require\s+version-modem\s*=\s*(.+)', android_info.decode('utf-8'))
   if m:
     version = m.group(1).rstrip()
     if len(version) and '*' not in version:
