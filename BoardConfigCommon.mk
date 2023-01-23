@@ -111,9 +111,6 @@ BOARD_HEALTHD_CUSTOM_CHARGER_RES := $(PLATFORM_PATH)/charger/images
 # Before enabling lineage charger you have to fix it!
 WITH_LINEAGE_CHARGER := false
 
-# Crypto
-TARGET_HW_DISK_ENCRYPTION := true
-
 # Display
 TARGET_USES_ION := true
 TARGET_USES_GRALLOC1 := true
