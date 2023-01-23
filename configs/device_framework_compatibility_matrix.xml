@@ -40,16 +40,8 @@
     <hal format="hidl" optional="true">
         <name>android.hardware.cas</name>
         <transport>hwbinder</transport>
-        <version>1.4</version>
-        <interface>
-            <name>IMediaCasService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hardware.cas</name>
-        <transport>hwbinder</transport>
         <version>1.2</version>
+        <version>1.4</version>
         <interface>
             <name>IMediaCasService</name>
             <instance>default</instance>
@@ -71,17 +63,18 @@
         <name>android.hardware.gnss</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
+        <version>2.0</version>
         <interface>
             <name>IGnss</name>
             <instance>gnss_vendor</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>android.hardware.gnss</name>
+        <name>vendor.lineage.trust</name>
         <transport>hwbinder</transport>
-        <version>2.0</version>
+        <version>1.0</version>
         <interface>
-            <name>IGnss</name>
+            <name>IUsbRestrict</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -99,14 +92,6 @@
         <interface>
             <name>IOemHook</name>
             <instance>slot1</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hardware.radio.deprecated</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IOemHook</name>
             <instance>slot2</instance>
         </interface>
     </hal>
@@ -217,29 +202,8 @@
     <hal format="hidl" optional="true">
         <name>vendor.qti.gnss</name>
         <version>1.0</version>
-        <interface>
-            <name>ILocHidlGnss</name>
-            <instance>gnss_vendor</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.gnss</name>
         <version>1.2</version>
-        <interface>
-            <name>ILocHidlGnss</name>
-            <instance>gnss_vendor</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.gnss</name>
         <version>2.1</version>
-        <interface>
-            <name>ILocHidlGnss</name>
-            <instance>gnss_vendor</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.gnss</name>
         <version>3.0</version>
         <interface>
             <name>ILocHidlGnss</name>
@@ -284,13 +248,6 @@
         <interface>
             <name>IDataConnection</name>
             <instance>slot1</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.data.connection</name>
-        <version>1.0</version>
-        <interface>
-            <name>IDataConnection</name>
             <instance>slot2</instance>
         </interface>
     </hal>
@@ -332,13 +289,6 @@
         <interface>
             <name>IQcRilAudio</name>
             <instance>slot1</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.radio.am</name>
-        <version>1.0</version>
-        <interface>
-            <name>IQcRilAudio</name>
             <instance>slot2</instance>
         </interface>
     </hal>
@@ -348,13 +298,6 @@
         <interface>
             <name>IImsRadio</name>
             <instance>imsradio0</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.radio.ims</name>
-        <version>1.0</version>
-        <interface>
-            <name>IImsRadio</name>
             <instance>imsradio1</instance>
         </interface>
     </hal>
@@ -364,13 +307,6 @@
         <interface>
             <name>IUimLpa</name>
             <instance>UimLpa0</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.radio.lpa</name>
-        <version>1.0</version>
-        <interface>
-            <name>IUimLpa</name>
             <instance>UimLpa1</instance>
         </interface>
     </hal>
@@ -380,13 +316,6 @@
         <interface>
             <name>IQtiOemHook</name>
             <instance>oemhook0</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.radio.qcrilhook</name>
-        <version>1.0</version>
-        <interface>
-            <name>IQtiOemHook</name>
             <instance>oemhook1</instance>
         </interface>
     </hal>
@@ -396,13 +325,6 @@
         <interface>
             <name>IQtiRadio</name>
             <instance>slot1</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.radio.qtiradio</name>
-        <version>1.0</version>
-        <interface>
-            <name>IQtiRadio</name>
             <instance>slot2</instance>
         </interface>
     </hal>
@@ -412,13 +334,6 @@
         <interface>
             <name>IUim</name>
             <instance>Uim0</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.radio.uim</name>
-        <version>1.0</version>
-        <interface>
-            <name>IUim</name>
             <instance>Uim1</instance>
         </interface>
     </hal>
@@ -428,13 +343,6 @@
         <interface>
             <name>IUimRemoteServiceClient</name>
             <instance>uimRemoteClient0</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.radio.uim_remote_client</name>
-        <version>1.0</version>
-        <interface>
-            <name>IUimRemoteServiceClient</name>
             <instance>uimRemoteClient1</instance>
         </interface>
     </hal>
@@ -444,13 +352,6 @@
         <interface>
             <name>IUimRemoteServiceServer</name>
             <instance>uimRemoteServer0</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.radio.uim_remote_server</name>
-        <version>1.0</version>
-        <interface>
-            <name>IUimRemoteServiceServer</name>
             <instance>uimRemoteServer1</instance>
         </interface>
     </hal>
