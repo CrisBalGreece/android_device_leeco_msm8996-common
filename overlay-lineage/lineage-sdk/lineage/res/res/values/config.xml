@@ -112,6 +112,7 @@
             2 - Supported with variable brightness control
     -->
     <integer name="config_deviceSupportsButtonBrightnessControl">2</integer>
+    <dimen name="config_buttonBrightnessSettingDefaultFloat">0.15</dimen>
 
     <!-- Control the behavior when the user long presses the app switch button.
             0 - Nothing
