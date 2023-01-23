@@ -1,4 +1,4 @@
-set_prop(rild, system_radio_prop)
+set_prop(rild, vendor_radio_prop)
 set_prop(rild, vendor_qcom_ims_prop)
 
 dontaudit rild tombstone_data_file:dir { search };
