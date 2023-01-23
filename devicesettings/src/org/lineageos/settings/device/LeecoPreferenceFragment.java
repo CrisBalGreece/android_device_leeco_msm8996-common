@@ -25,6 +25,7 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 
 public class LeecoPreferenceFragment extends PreferenceFragment {
+    private static final String TAG = "LeecoPreferenceFragment";
     private static final String KEY_CAMERA_FOCUS_FIX_ENABLE = "camera_focus_enable";
     private static final String KEY_QUICK_CHARGE_ENABLE = "quick_charge_enable";
 
@@ -39,6 +40,7 @@ public class LeecoPreferenceFragment extends PreferenceFragment {
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+        Log.d(TAG, "onCreatePreferences+++");
         addPreferencesFromResource(R.xml.leeco_settings_panel);
         final PreferenceScreen prefSet = getPreferenceScreen();
         mCameraFocusFixEnable = (SwitchPreference) findPreference(KEY_CAMERA_FOCUS_FIX_ENABLE);
@@ -46,26 +48,32 @@ public class LeecoPreferenceFragment extends PreferenceFragment {
 
         if (SettingsUtils.supportsCameraFocusFix()) {
             mCameraFocusFixEnable.setChecked(SettingsUtils.getCameraFocusFixEnabled(getActivity()));
-            mCameraFocusFixEnable.setOnPreferenceChangeListener(PrefListener);
+            mCameraFocusFixEnable.setOnPreferenceChangeListener(mPrefListener);
+            Log.d(TAG, "onCreatePreferences: cam focus fix enable = "
+                    + SettingsUtils.getCameraFocusFixEnabled(getActivity()));
         } else {
             prefSet.removePreference(mCameraFocusFixEnable);
         }
 
         if (SettingsUtils.supportsQuickChargeSwitch()) {
             mQuickChargeEnable.setChecked(SettingsUtils.getQuickChargeEnabled(getActivity()));
-            mQuickChargeEnable.setOnPreferenceChangeListener(PrefListener);
+            mQuickChargeEnable.setOnPreferenceChangeListener(mPrefListener);
+            Log.d(TAG, "onCreatePreferences: quick charge enable = "
+                    + SettingsUtils.getQuickChargeEnabled(getActivity()));
         } else {
             prefSet.removePreference(mQuickChargeEnable);
         }
+        Log.d(TAG, "onCreatePreferences---");
     }
 
     @Override
     public void onResume() {
         super.onResume();
+        Log.d(TAG, "onResume+++");
         getListView().setPadding(0, 0, 0, 0);
     }
 
-    private Preference.OnPreferenceChangeListener PrefListener =
+    private Preference.OnPreferenceChangeListener mPrefListener =
         new Preference.OnPreferenceChangeListener() {
             @Override
             public boolean onPreferenceChange(Preference preference, Object value) {
@@ -75,10 +83,12 @@ public class LeecoPreferenceFragment extends PreferenceFragment {
                     boolean enabled = (boolean) value;
                     SettingsUtils.setCameraFocusFixEnabled(getActivity(), enabled);
                     SettingsUtils.writeCameraFocusFixSysfs(enabled);
+                    Log.d(TAG, "onPreferenceChange: cam focus fix enable = " + enabled);
                 } else if (KEY_QUICK_CHARGE_ENABLE.equals(key)) {
                     boolean enabled = (boolean) value;
                     SettingsUtils.setQuickChargeEnabled(getActivity(), enabled);
                     SettingsUtils.writeQuickChargeProp(enabled);
+                    Log.d(TAG, "onPreferenceChange: quick charge enable = " + enabled);
                 }
 
                 return true;

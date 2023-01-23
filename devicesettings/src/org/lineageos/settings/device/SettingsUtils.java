@@ -29,6 +29,7 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
+import android.text.TextUtils;
 
 public class SettingsUtils {
     public static final String TAG = "SettingsUtils";
