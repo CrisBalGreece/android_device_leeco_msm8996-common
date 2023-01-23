@@ -1,5 +1,5 @@
 persist.sys.diag.max.size          u:object_r:diag_prop:s0
-
+persist.hvdcp.                     u:object_r:vendor_hvdcp_opti_prop:s
 # camera
 persist.camera.                    u:object_r:camera_prop:s0
 
