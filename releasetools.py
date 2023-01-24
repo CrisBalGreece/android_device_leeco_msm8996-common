@@ -56,7 +56,7 @@ abort("Error: Vendor partition doesn\'t exist! Please reboot to recovery and fla
 
 def AddModemAssertion(info):
   android_info = info.input_zip.read("OTA/android-info.txt").decode('UTF-8')
-  m = re.search(r'require\s+version-modem\s*=\s*(.+)', android_info.decode('utf-8'))
+  m = re.search(r'require\s+version-modem\s*=\s*(.+)', android_info)
   if m:
     version = m.group(1).rstrip()
     if len(version) and '*' not in version:
