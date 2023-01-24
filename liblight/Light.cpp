@@ -193,7 +193,7 @@ void Light::setSpeakerBatteryLightLocked() {
 }
 
 void Light::setSpeakerLightLocked(const LightState& state) {
-    int red, green, blue;
+    int red, green, blue, blink;
     int onMs, offMs, stepDuration, pauseHi;
     uint32_t alpha;
 
