@@ -37,14 +37,33 @@ PRODUCT_ODM_PROPERTIES += \
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
-    bt.max.hfpclient.connections=1 \
-    ro.bluetooth.dun=true \
-    ro.bluetooth.hfp.ver=1.7 \
-    ro.bluetooth.sap=true \
-    ro.btconfig.chip=QCA6164 \
-    ro.btconfig.dev=/dev/ttyHS0 \
-    ro.btconfig.if=uart \
-    ro.btconfig.vendor=qcom \
+    config_bluetooth_le_peripheral_mode_supported=true \
+    bluetooth.device.class_of_device=90,2,12 \
+    bluetooth.hardware.power.operating_voltage_mv=3300 \
+    bluetooth.profile.a2dp.source.enabled?=true \
+    bluetooth.profile.asha.central.enabled?=true \
+    bluetooth.profile.avrcp.target.enabled?=true \
+    bluetooth.profile.bas.client.enabled?=true \
+    bluetooth.profile.gatt.enabled?=true \
+    bluetooth.profile.hfp.ag.enabled?=true \
+    bluetooth.profile.hid.device.enabled?=true \
+    bluetooth.profile.hid.host.enabled?=true \
+    bluetooth.profile.map.server.enabled?=true \
+    bluetooth.profile.opp.enabled?=true \
+    bluetooth.profile.pan.nap.enabled?=true \
+    bluetooth.profile.pan.panu.enabled?=true \
+    bluetooth.profile.pbap.server.enabled?=true \
+    bluetooth.profile.sap.server.enabled?=true \
+    persist.bluetooth.a2dp_offload.cap=sbc-aptx-aptxhd-aac-ldac \
+    persist.bluetooth.a2dp_offload.disabled=false \
+    persist.sys.fflag.override.settings_bluetooth_hearing_aid=true \
+    persist.vendor.bt.aac_frm_ctl.enabled=true \
+    persist.vendor.bt.aac_vbr_frm_ctl.enabled=true \
+    persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2 \
+    persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true \
+    persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true \
+    persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true \
+    ro.bluetooth.a2dp_offload.supported=true \
     vendor.qcom.bluetooth.soc=rome
 
 # BPF
@@ -56,7 +75,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.HAL3.enabled=1 \
     persist.camera.imglib.fddsp=1 \
     persist.camera.llc=1 \
-    persist.camera.llnoise=1 \
+    persist.camera.llnoise=1
 
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \

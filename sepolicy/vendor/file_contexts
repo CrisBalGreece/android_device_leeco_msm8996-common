@@ -56,3 +56,6 @@
 /sys/devices/soc/soc:qcom,camera-flash/flashled[0-9](/.*)?               u:object_r:sysfs_torch:s0
 
 /sys/remote/enable                                                       u:object_r:sysfs_ir_enable:s0
+
+# Bluetooth
+/(vendor|system/vendor)/bin/hw/android\.hardware\.audio\.service         u:object_r:hal_audio_default_exec:s0
