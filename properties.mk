@@ -71,7 +71,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.kernel.ebpf.supported=false
 
 # Camera
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.camera.HAL3.enabled=1 \
     persist.camera.imglib.fddsp=1 \
     persist.camera.llc=1 \
