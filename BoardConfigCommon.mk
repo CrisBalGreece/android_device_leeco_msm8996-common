@@ -178,8 +178,8 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(PLATFORM_PATH)
 # RIL
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
-# Security patch level - (zl1 EUI ROM CN 20s)
-VENDOR_SECURITY_PATCH := 2016-10-01
+# Security patch level (follow platform patch)
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
