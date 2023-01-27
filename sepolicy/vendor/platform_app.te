@@ -1,1 +1,2 @@
 allow platform_app sysfs_kgsl:dir search;
+allow platform_app sysfs_ir_enable:file write;
