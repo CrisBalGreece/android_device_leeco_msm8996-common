@@ -237,6 +237,9 @@ PRODUCT_PACKAGES += \
     charger_res_images
 
 # HIDL
+PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
+
+# HIDL
 PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0.vendor \
     android.hidl.base@1.0 \
