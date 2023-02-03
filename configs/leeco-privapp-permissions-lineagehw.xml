@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <privapp-permissions package="org.lineageos.settings.device">
+        <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS" />
+    </privapp-permissions>
+</permissions>
