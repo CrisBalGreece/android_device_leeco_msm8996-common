@@ -18,6 +18,10 @@
 # LeEco msm8996 devices launched with M
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+RELAX_USES_LIBRARY_CHECK := true
+OVERRIDE_PRODUCT_COMPRESSED_APEX := false
+
 PRODUCT_PACKAGES += \
 Gboard
 
@@ -28,7 +32,7 @@ PRODUCT_COPY_FILES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-octavi
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
@@ -193,9 +197,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl:64 \
     android.hardware.drm@1.0-service \
-    android.hardware.drm-service.clearkey \
+    android.hardware.drm@1.4-service.clearkey \
+    android.hardware.drm@1.0.vendor \
+    android.hardware.drm@1.1.vendor \
     android.hardware.drm@1.2.vendor \
-    android.hardware.drm@1.3.vendor
+    android.hardware.drm@1.3.vendor \
+    android.hardware.drm@1.4.vendor \
 
 # For config.fs
 PRODUCT_PACKAGES += \
