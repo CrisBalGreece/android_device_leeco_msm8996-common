@@ -111,6 +111,14 @@ function blob_fixup() {
         "${PATCHELF}" --remove-needed "libandroid_runtime.so" "${2}"
         ;;
 
+    vendor/lib64/libwvhidl.so)
+        "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v29.so" "${2}"
+        ;;
+
+    vendor/lib64/libsettings.so)
+        "${PATCHELF}" --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v28.so" "${2}"
+        ;;
+
     # Patch blobs for VNDK
     vendor/lib64/lib-dplmedia.so)
         "${PATCHELF}" --remove-needed "libmedia.so" "${2}"
