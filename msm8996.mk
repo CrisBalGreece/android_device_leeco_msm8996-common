@@ -191,11 +191,8 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.0-impl:64 \
-    android.hardware.drm@1.0-service \
-    android.hardware.drm-service.clearkey \
     android.hardware.drm@1.2.vendor \
-    android.hardware.drm@1.3.vendor
+    android.hardware.drm-service.clearkey
 
 # For config.fs
 PRODUCT_PACKAGES += \
@@ -466,6 +463,9 @@ PRODUCT_PACKAGES += \
 # VNDK
 PRODUCT_PACKAGES += \
     vndk_package
+# VNDK
+PRODUCT_COPY_FILES += \
+prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libcutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcutils-v29.so
 
 # WiFi
 PRODUCT_PACKAGES += \
