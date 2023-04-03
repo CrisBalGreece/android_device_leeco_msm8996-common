@@ -51,11 +51,8 @@
     <!-- Indicate the driver support NL80211_REG_CHANGED event. -->
     <bool translatable="false" name="config_wifiDriverSupportedNl80211RegChangedEvent">true</bool>
 	
-    <!-- Indicate whether the verbose logging is always on -->
-    <!-- 0: verbose logging controlled by user
-         1: verbose logging on by default for userdebug
-         2: verbose logging on by default for all builds -->
-    <integer translatable="false" name="config_wifiVerboseLoggingAlwaysOnLevel">1</integer>
+    <!-- Indicate the device support request channel on Wi-Fi Aware data-path. -->
+    <bool name="config_wifiSupportChannelOnDataPath" translatable="false">true</bool>
 	
     <!-- Default access point SSID used for tethering -->
     <string name="wifi_tether_configure_ssid_default" translatable="false">LeMax2</string>
