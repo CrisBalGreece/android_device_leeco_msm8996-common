@@ -5,4 +5,5 @@ allow quicksetsdk_app activity_service:service_manager { find };
 allow quicksetsdk_app app_data_file:file { execute };
 allow quicksetsdk_app consumer_ir_device:chr_file { rw_file_perms };
 allow quicksetsdk_app system_data_file:dir { search };
+allow quicksetsdk_app user_profile_root_file:dir { search };
 dontaudit quicksetsdk_app tethering_service:service_manager { find };

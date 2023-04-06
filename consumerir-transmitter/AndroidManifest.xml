@@ -25,7 +25,6 @@
         <receiver android:name=".Startup">
             <intent-filter android:priority="99">
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
-                <action android:name="lineageos.intent.action.INITIALIZE_LINEAGE_HARDWARE" />
             </intent-filter>
         </receiver>
 
