@@ -9,4 +9,4 @@ allow quicksetsdk_app content_capture_service:service_manager find;
 allow quicksetsdk_app game_service:service_manager find;
 allow quicksetsdk_app system_data_file:dir search;
 allow quicksetsdk_app user_profile_root_file:dir search;
-
+dontaudit quicksetsdk_app tethering_service:service_manager { find };
