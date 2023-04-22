@@ -665,9 +665,9 @@ vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so|7d7044da11fa3784626277270510
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so|447d205fca7ea674f7f3f072e7d26ae0a0a9b4b4
 
 # RIL (IMS)
-product/priv-app/ims/ims.apk:system_ext/priv-app/ims/ims.apk
-product/lib64/libimscamera_jni.so:system_ext/lib64/libimscamera_jni.so
-product/lib64/libimsmedia_jni.so:system_ext/lib64/libimsmedia_jni.so
+system_ext/priv-app/ims/ims.apk|9c4ca91e0ec7a567d22251d7ca0640abf13fdd7b
+system_ext/lib64/libimscamera_jni.so|7cb89110cca94d37d68c705f12a7a5a4ee106139
+system_ext/lib64/libimsmedia_jni.so|3540752cc3658261ea3c909f03018eea4398f84e
 
 # Sensors - from oneplus3t - OnePlus/OnePlus3/OnePlus3T:9/PKQ1.181203.001/1911042108 - OOS 9.0.6
 vendor/bin/sensors.qti|c65a1300c40dffbfa4739e63181fae1b6c9cf2ac
