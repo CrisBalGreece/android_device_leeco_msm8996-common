@@ -33,6 +33,6 @@
     <bool name="config_supportBatteryHealth">true</bool>
 	
     <!-- Device specific doze package -->
-    <string name="config_customDozePackage" translatable="false">true</string>
+    <string name="config_customDozePackage">org.lineageos.settings.doze/org.lineageos.settings.doze.DozeSettingsActivity</string>
 	
 </resources>
