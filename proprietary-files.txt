@@ -286,8 +286,8 @@ vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
 
 # LetvRemote and consumerir - from le_x10 (x850) - 7.1.1/LEXCNFN6061705181T/letv05181516
--vendor/app/UEIQuicksetSDKLeTV/UEIQuicksetSDKLeTV.apk|b9b4a53a6465dbd9e1d1b6f1a8393313f5e72f64
--vendor/app/LetvRemoteControl/LetvRemoteControl.apk|58de9a8d4ca33ebcacf8dcae4185aac5ce8f1667
+-system/app/UEIQuicksetSDKLeTV/UEIQuicksetSDKLeTV.apk|b9b4a53a6465dbd9e1d1b6f1a8393313f5e72f64
+-system/app/LetvRemoteControl/LetvRemoteControl.apk|58de9a8d4ca33ebcacf8dcae4185aac5ce8f1667
 
 # Display
 /vendor/lib64/libdisplayconfig.qti.so|6b8a230de23d8bd8d911959798911f5ad5a15d95
