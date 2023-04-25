@@ -58,9 +58,7 @@
             2 - Supported with variable brightness control
     -->
     <integer name="config_deviceSupportsButtonBrightnessControl">2</integer>
-    <dimen name="config_buttonBrightnessSettingDefaultFloat">0.15</dimen>
-    <integer name="config_buttonBrightnessSettingDefault">15</integer>
-    <bool name="config_deviceHasVariableButtonBrightness">true</bool>
+    <dimen name="config_buttonBrightnessSettingDefaultFloat">0.12</dimen>
 	
     <!-- Control whether the always on display mode is available. This should only be enabled on
          devices where the display has been tuned to be power efficient in DOZE and/or DOZE_SUSPEND
@@ -87,12 +85,12 @@
     -->
     <integer name="config_longPressOnAppSwitchBehavior">1</integer>
 	
-    <!-- Smart charge sysfs node and value for suspend/resume charging-->
+    <!-- Smart charge sysfs node and value for suspend/resume charging 
     <integer name="config_smartChargingBatteryLevel">90</integer>
     <integer name="config_smartChargingBatteryResumeLevel">30</integer>
     <bool name="config_smart_battery_available">true</bool>
     <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
     <string name="config_SmartChargingSupspendValue" translatable="false">0</string>
-    <string name="config_SmartChargingResumeValue" translatable="false">1</string>
+    <string name="config_SmartChargingResumeValue" translatable="false">1</string> -->
 	
 </resources>
