@@ -1,5 +1,3 @@
-# LineageOS recovery maintainer Props
-ro.lineage.maintainer=CrisBalGreece
 # Add properties to help CTS pass
 ro.boot.verifiedbootstate=green
 ro.boot.veritymode=enforcing
