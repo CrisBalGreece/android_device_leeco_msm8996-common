@@ -32,7 +32,4 @@
     <string name="config_batCurCap">/sys/class/power_supply/bms/charge_full</string>
     <bool name="config_supportBatteryHealth">true</bool>
 	
-    <!-- Device specific doze package -->
-    <string name="config_customDozePackage">org.lineageos.settings.doze/org.lineageos.settings.doze.DozeSettingsActivity</string>
-	
 </resources>
