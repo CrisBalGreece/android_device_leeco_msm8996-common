@@ -74,8 +74,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.charger.enable_suspend=true
 
 # Chipset
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.soc.manufacturer=Qualcomm \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.soc.manufacturer=QTI \
     ro.soc.model=MSM8996
 
 # CNE
