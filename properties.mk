@@ -222,3 +222,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
+
+# WiFi Display
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    media.wfd.max_resolution=5
