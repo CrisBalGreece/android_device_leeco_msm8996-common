@@ -74,7 +74,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.charger.enable_suspend=true
 
 # Chipset
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.soc.manufacturer=QTI \
     ro.soc.model=MSM8996
 
