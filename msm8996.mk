@@ -18,8 +18,11 @@
 # LeEco msm8996 devices launched with M
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
+# Prebuilt packages
+ifneq ($(LEGION_GAPPS), true)
 PRODUCT_PACKAGES += \
-Gboard
+    Gboard
+endif
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \
