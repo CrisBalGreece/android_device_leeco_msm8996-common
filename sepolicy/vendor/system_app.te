@@ -11,3 +11,11 @@ allow system_app sysfs_ir_enable:file { rw_file_perms };
 
 #DeviceSettings.apk need to get and set camera_prop
 set_prop(system_app, camera_prop)
+
+#Spectrum
+get_prop(system_app, default_prop)
+set_prop(system_app, default_prop)
+allow system_app default_prop:property_service set;
+allow system_app zygote:unix_stream_socket { getopt };
+allow system_app proc_pagetypeinfo:file { read };
+allow system_app sysfs:file { open read getattr write };

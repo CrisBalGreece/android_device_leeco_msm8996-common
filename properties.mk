@@ -82,6 +82,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.vendor.cne.feature=1
 
+# CPU profiles
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.spectrum.profile=0 \
+persist.thermal.profile=0
+
 # Data modules
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.iwlan.enable=true \

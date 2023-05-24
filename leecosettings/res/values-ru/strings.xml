@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 The CyanogenMod Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	
+	<!-- Category title -->
+    <string name="leeco_settings_title">Настройки Leeco</string>
+    <string name="camera_pref_title">Камера</string>
+    <string name="battery_settings_title">Аккумулятор</string>
+    <string name="cdla_settings_title">Aудио</string>
+    <string name="graphics_title">Графика</string>
+    <string name="system_title">Cистема</string>
+    <string name="spectrum_profile_title">Профили CPU</string>
+    <string name="thermal_profile_title">CPU Тепловые профили</string>
+
+    <!-- Kcal -->
+    <string name="kcal_title">Цвет дисплея</string>
+    <string name="kcal_summary">Отображение калибровки цвета с помощью KCAL. Перезагрузите устройство после отключения или сброса.</string>
+    <string name="kcal_enabled_title">Включить KCAL</string>
+    <string name="kcal_enabled_summary">Включите калибровку дисплея с помощью KCAL.</string>
+    <string name="kcal_red">красный</string>
+    <string name="kcal_green">зеленый</string>
+    <string name="kcal_blue">Синий</string>
+    <string name="kcal_saturation">насыщенность</string>
+    <string name="kcal_contrast">Контраст</string>
+    <string name="menu_reset">перезагрузить</string>
+    <string name="kcal_color_temp">Цветовая температура (K)</string>	
+
+    <!-- Battery -->
+    <string name="qc_title">Быстрая зарядка</string>
+    <string name="qc_summary">Включение/выключение быстрой зарядки</string>
+
+    <!-- Live display -->
+    <string name="live_display_title">Oтображать</string>
+    <string name="live_display_summary">Показать настройки инверсии.</string>
+	
+    <!-- Sound -->
+    <string name="cdla_title">CDLA</string>
+    <string name="cdla_summary">Для оригинального аудио EUI.</string>
+
+    <!-- Camera focus fix-->
+    <string name="camera_focus_fix_title">Исправление автофокуса</string>
+    <string name="camera_focus_fix_summary">Включайте его, только если на вашем устройстве проблема с автофокусом.</string>
+	
+    <!-- Camera HAL3-->
+    <string name="camera_hal3_title">Отключить/включить HAL3</string>
+    <string name="camera_hal3_summary">Отключение HAL3 приведет к принудительному использованию HAL1. Обратите внимание, что для модов Gcam требуется HAL3, вы должны подождать минуту, прежде чем использовать приложение камеры, так как для применения HAL требуется перезагрузка приложения Камера.</string>
+
+	<!-- CPU Profiles -->
+    <string name="spectrum_title">CPU энергетический профиль</string>
+    <string name="spectrum_summary">Cвыберите свой профиль производительности / экономии энергии.</string>
+    <string name="spectrum_dialogTitle">CPU Профиль мощности</string>
+	
+    <!-- Thermal Profiles -->
+    <string name="thermal_title">Тепловой профиль</string>
+    <string name="thermal_summary">Выберите свой тепловой профиль. Остерегайтесь высоких температур при применении профилей производительности, видео или игр.</string>
+    <string name="thermal_dialogTitle">CPU тепловой профиль. Для применения требуется перезагрузка.</string>
+
+    <!-- App powersave and notifications -->
+    <string name="powersave_settings_title">Энергосбережение</string>
+    <string name="prefs_battery_saver_title">Оптимизация приложений</string>
+    <string name="prefs_battery_saver_summary">Оптимизация батареи для системных приложений</string>
+    <string name="prefs_app_options_title">Уведомления приложений</string>
+    <string name="prefs_app_options_summary">Параметры уведомлений приложений</string>
+    <string name="app_title">Конфиденциальность приложений</string>
+    <string name="prefs_app_unknown_title">Неизвестные приложения</string>
+    <string name="prefs_app_unknown_summary">Варианты установки неизвестных приложений</string>
+
+</resources>
