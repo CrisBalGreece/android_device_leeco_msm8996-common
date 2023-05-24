@@ -57,7 +57,7 @@
 		android:icon="@drawable/ic_leeco_display"
 		android:title="@string/live_display_title"
 		android:summary="@string/live_display_summary">
-        <intent android:action="com.android.settings.Settings$AccessibilityInversionSettings.Activity" />
+        <intent android:action="android.settings.COLOR_INVERSION_SETTINGS" />
         </Preference>
 		
     </PreferenceCategory>
