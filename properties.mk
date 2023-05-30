@@ -69,6 +69,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.camera.llc=1 \
     persist.camera.llnoise=1
 
+# Camera focus fix
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.focus_fix=0
+
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.charger.enable_suspend=true
