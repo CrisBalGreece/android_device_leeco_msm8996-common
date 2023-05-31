@@ -17,4 +17,5 @@
     <!-- About device screen, build maintainer -->
     <string name="build_maintainer_summary">CrisBalGreece</string>
     <string name="build_maintainer_telegram" translatable="false">https://t.me/CrisBalGreece</string>
+    <string name="selinux_status_permissive">Enforcing</string>
 </resources>

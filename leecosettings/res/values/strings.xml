@@ -42,7 +42,7 @@
 
     <!-- Live display -->
     <string name="live_display_title">Display</string>
-    <string name="live_display_summary">Display inversion settings.</string>
+    <string name="live_display_summary">Decrease screen brightness.</string>
 	
     <!-- Sound -->
     <string name="cdla_title">CDLA</string>

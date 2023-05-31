@@ -42,7 +42,7 @@
 
     <!-- Live display -->
     <string name="live_display_title">Oтображать</string>
-    <string name="live_display_summary">Показать настройки инверсии.</string>
+    <string name="live_display_summary">Уменьшить яркость экрана.</string>
 	
     <!-- Sound -->
     <string name="cdla_title">CDLA</string>

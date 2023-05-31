@@ -42,7 +42,7 @@
 	
     <!-- Live display -->
     <string name="live_display_title">Οθόνη</string>
-    <string name="live_display_summary">Αντιστροφή χρώματος οθόνης.</string>
+    <string name="live_display_summary">Μείωση φωτισμού οθόνης.</string>
 	
     <!-- Sound -->
     <string name="cdla_title">Ακουστικά CDLA</string>
