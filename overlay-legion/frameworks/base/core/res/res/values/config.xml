@@ -143,12 +143,12 @@
     <!-- Whether device can force navbar disabling -->
     <bool name="config_canForceDisableNavigationBar">true</bool>
 	
-    <!-- Smart charge sysfs node and value for suspend/resume charging 
+    <!-- Smart charge sysfs node and value for suspend/resume charging -->
     <integer name="config_smartChargingBatteryLevel">90</integer>
     <integer name="config_smartChargingBatteryResumeLevel">30</integer>
     <bool name="config_smart_battery_available">true</bool>
     <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
     <string name="config_SmartChargingSupspendValue" translatable="false">0</string>
-    <string name="config_SmartChargingResumeValue" translatable="false">1</string> -->
+    <string name="config_SmartChargingResumeValue" translatable="false">1</string> 
 	
 </resources>
