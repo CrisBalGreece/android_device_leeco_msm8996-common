@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2020 LegionOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- About device screen, build maintainer -->
+    <string name="build_maintainer">Специалист по сборке</string>
+    <string name="build_maintainer_summary">CrisBalGreece</string>
+    <string name="build_maintainer_telegram" translatable="false">https://t.me/CrisBalGreece</string>
+    <!-- SELinux Status -->
+    <string name="selinux_status">Cтатус SELinux</string>
+    <string name="selinux_status_disabled">Неполноценный</string>
+    <string name="selinux_status_permissive">Обеспечение</string>
+    <string name="selinux_status_enforcing">Обеспечение</string>
+    <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
+    <string name="build_date">Дата сборки</string>
+    <string name="legion_version">Версия LegionOS</string>
+    <string name="about_device_name">Устройство</string>
+    <!-- Battery temperature -->
+    <string name="battery_temperature">Температура батареи</string>
+
+    <!-- Battery health -->
+    <string name="current_battery_capacity">Текущая емкость аккумулятора</string>
+    <string name="designed_battery_capacity">Расчетная емкость аккумулятора</string>
+    <string name="battery_charge_cycles">Завершено циклов зарядки</string>
+</resources>
