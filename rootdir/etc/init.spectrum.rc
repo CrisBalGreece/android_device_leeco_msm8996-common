@@ -440,7 +440,7 @@ on property:persist.spectrum.profile=3
 
     # Configure governor settings for little cluster
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
-	write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1593600
+	write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1728000
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 960000
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/target_loads "19000 480000:20000 960000:20000"
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_slack -1
@@ -460,7 +460,7 @@ on property:persist.spectrum.profile=3
 
     # Configure governor settings for big cluster
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "interactive"
-    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq 2150400
+    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq 2265600
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 1036800
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/target_loads "19000 1400000:20000 1700000:20000 2100000:20000"
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/timer_slack -1
@@ -566,7 +566,7 @@ on property:persist.spectrum.profile=4
 	
     # Configure governor settings for little cluster
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1593600
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1728000
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 960000
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_sched_load 0
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_migration_notif 1
@@ -586,7 +586,7 @@ on property:persist.spectrum.profile=4
 	
     # Configure governor settings for big cluster
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "interactive"
-    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq 2150400
+    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq 2265600
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 1036800
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_sched_load 0
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_migration_notif 1
@@ -691,7 +691,7 @@ on property:persist.spectrum.profile=5
 	
     # Configure governor settings for little cluster	
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1593600
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1728000
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 960000
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_sched_load 0
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_migration_notif 1
@@ -711,7 +711,7 @@ on property:persist.spectrum.profile=5
 	
     # Configure governor settings for big cluster
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "interactive"
-    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq 2150400
+    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq 2265600
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 1036800
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_sched_load 0
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_migration_notif 1
