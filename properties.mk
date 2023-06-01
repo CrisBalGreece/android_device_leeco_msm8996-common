@@ -75,7 +75,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Chipset
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.soc.manufacturer=Qualcomm \
+    ro.soc.manufacturer=QTI \
     ro.soc.model=MSM8996
 
 # CNE
