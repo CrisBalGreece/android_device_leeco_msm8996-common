@@ -1,48 +1,48 @@
 
     #Rom Stock
 on property:persist.thermal.profile=0
-    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine.conf"
     stop thermal-engine
+    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine.conf"
     start thermal-engine
 
     #Battery
 on property:persist.thermal.profile=1
-    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-battery.conf"
     stop thermal-engine
+    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-battery.conf"
     start thermal-engine
 
     #Balanced
 on property:persist.thermal.profile=2
-    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-balanced.conf"
     stop thermal-engine
+    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-balanced.conf"
     start thermal-engine
 
     #Video
 on property:persist.thermal.profile=3
-    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-video.conf"
     stop thermal-engine
+    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-video.conf"
     start thermal-engine
 
     #Performance
 on property:persist.thermal.profile=4
-    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-performance.conf"
     stop thermal-engine
+    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-performance.conf"
     start thermal-engine
 
     #Gaming
 on property:persist.thermal.profile=5
-    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-gaming.conf"
     stop thermal-engine
+    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-gaming.conf"
     start thermal-engine
 
     #GBG Average
 on property:persist.thermal.profile=6
-    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-cbg.conf"
     stop thermal-engine
+    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-cbg.conf"
     start thermal-engine
 	
     #EUI
 on property:persist.thermal.profile=7
-    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-eui.conf"
     stop thermal-engine
+    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-eui.conf"
     start thermal-engine
