@@ -90,6 +90,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.data.mode=concurrent \
     ro.vendor.use_data_netmgrd=true
+	
+# Deep Sleep
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    pm.sleep_mode=1 \
+    vendor.post_boot.parsed=1
 
 # Devinfo for init
 PRODUCT_PROPERTY_OVERRIDES += \
