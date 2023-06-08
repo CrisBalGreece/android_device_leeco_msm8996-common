@@ -463,6 +463,8 @@ on property:sys.boot_completed=1
     swapon_all /vendor/etc/fstab.qcom
     # Enable hvdcp
     setprop persist.hvdcp.allow_opti 1
+    # Start perf
+    setprop vendor.post_boot.parsed 1
 
 # Start camera server as daemon
 service qcamerasvr /vendor/bin/mm-qcamera-daemon
