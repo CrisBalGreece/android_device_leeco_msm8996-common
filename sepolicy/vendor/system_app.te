@@ -6,7 +6,7 @@ allow system_app proc_touchpanel:dir { search };
 allow system_app proc_touchpanel:file { rw_file_perms };
 
 allow system_app sysfs_batteryinfo:dir search;
-
+allow system_app proc_pagetypeinfo:file r_file_perms;
 allow system_app sysfs_ir_enable:file { rw_file_perms };
 
 #DeviceSettings.apk need to get and set camera_prop
@@ -19,3 +19,7 @@ allow system_app default_prop:property_service set;
 allow system_app zygote:unix_stream_socket { getopt };
 allow system_app proc_pagetypeinfo:file { read };
 allow system_app sysfs:file { open read getattr write };
+
+# Zram Access
+allow system_app sysfs_zram:dir search;
+allow system_app sysfs_zram:file r_file_perms;
