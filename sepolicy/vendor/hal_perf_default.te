@@ -1,7 +1,9 @@
 set_prop(hal_perf_default, vendor_mpctl_prop)
+set_prop(hal_perf_default, hal_power_default)
 
 dontaudit hal_perf_default hal_perf_default:capability dac_override;
 dontaudit hal_perf_default self:capability { dac_override dac_read_search };
 
 # Allow perf HAL to set freq props
 set_prop(hal_perf_default, vendor_freq_prop)
+allow hal_perf_default hal_power_default:dir { open search read write getattr };

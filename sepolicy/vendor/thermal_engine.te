@@ -23,3 +23,5 @@ unix_socket_connect(thermal-engine, property, init);
 r_dir_file(thermal-engine, sysfs)
 set_prop(thermal-engine, thermal_normal_prop)
 get_prop(thermal-engine, vendor_thermal_prop)
+get_prop(thermal-engine, default_prop)
+allow thermal-engine default_prop:file { open read };

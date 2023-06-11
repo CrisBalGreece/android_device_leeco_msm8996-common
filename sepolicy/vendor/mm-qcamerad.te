@@ -1,3 +1,4 @@
 binder_use(mm-qcamerad);
 allow mm-qcamerad vendor_camera_data_file:sock_file { create unlink };
 allow mm-qcamerad vendor_camera_data_file:dir search;
+allow mm-qcamerad default_prop:file read;

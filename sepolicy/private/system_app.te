@@ -1,2 +1,3 @@
 allow system_app tracingproxy_service:service_manager find;
 allow system_app proc_pagetypeinfo:file { getattr };
+allow system_app sysfs:file { open read getattr write };
