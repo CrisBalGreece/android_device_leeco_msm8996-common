@@ -315,6 +315,9 @@ firmware_directories /vendor/firmware_mnt/image/
 # Kmsg device
 /dev/kmsg                                               0620   root       system
 
+# Charger
+/sys/class/power_supply/battery  charging_enabled       0660   system     system
+
 # NPU device
 /dev/msm_npu             0644   system     system
 
