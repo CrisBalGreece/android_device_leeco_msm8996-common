@@ -1,5 +1,10 @@
+get_prop(rild, vendor_radio_prop)
 set_prop(rild, vendor_radio_prop)
 set_prop(rild, vendor_qcom_ims_prop)
+allow rild vendor_radio_prop:property_service { set };
 
 dontaudit rild tombstone_data_file:dir { search };
 dontaudit rild vendor_file:file { ioctl };
+allow rild default_prop:file read;
+allow rild system_prop:file read;
+allow rild vendor_toolbox_exec:file execute_no_trans;
