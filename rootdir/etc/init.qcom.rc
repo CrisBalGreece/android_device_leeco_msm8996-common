@@ -480,6 +480,9 @@ service vendor.per_mgr /vendor/bin/pm-service
     group system net_raw
     ioprio rt 4
     writepid /dev/cpuset/system-background/tasks
+	
+on property:persist.sys.xtra-daemon.enabled=*
+    restart vendor.loc_launcher
 
 service vendor.per_proxy /vendor/bin/pm-proxy
     class core

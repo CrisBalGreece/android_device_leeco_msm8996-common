@@ -88,6 +88,12 @@ const char LOC_PATH_APDR_CONF[] = LOC_PATH_APDR_CONF_STR;
 const char LOC_PATH_XTWIFI_CONF[] = LOC_PATH_XTWIFI_CONF_STR;
 const char LOC_PATH_QUIPC_CONF[] = LOC_PATH_QUIPC_CONF_STR;
 
+bool isXtraDaemonEnabled() {
+    bool enabled = property_get_bool("persist.sys.xtra-daemon.enabled", false);
+    LOC_LOGe("xtra-daemon enabled: %d\n", enabled);
+    return enabled;
+}
+
 bool isVendorEnhanced() {
     return sVendorEnhanced;
 }
@@ -794,6 +800,13 @@ int loc_read_process_conf(const char* conf_file_name, uint32_t * process_count_p
             LOC_LOGD("%s:%d]: Process %s is disabled via vendor enhanced process check",
                      __func__, __LINE__, conf.proc_name);
             child_proc[j].proc_status = DISABLED_VIA_VENDOR_ENHANCED_CHECK;
+            continue;
+        }
+		
+        if (strcmp(conf.proc_name, "xtra-daemon") == 0 && !isXtraDaemonEnabled()) {
+            LOC_LOGE("%s:%d]: Process xtra-daemon is disabled via property",
+                     __func__, __LINE__);
+            child_proc[j].proc_status = DISABLED_FROM_CONF;
             continue;
         }
 
