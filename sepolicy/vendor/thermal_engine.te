@@ -19,5 +19,9 @@ type_transition thermal-engine socket_device:sock_file thermal_socket "thermal-r
 # Rule for thermal-engine to access init process
 unix_socket_connect(thermal-engine, property, init);
 
+# Allow thermal-engine to read files in /sys
+r_dir_file(thermal-engine, sysfs)
 set_prop(thermal-engine, thermal_normal_prop)
 get_prop(thermal-engine, vendor_thermal_prop)
+get_prop(thermal-engine, default_prop)
+allow thermal-engine default_prop:file { open read };
