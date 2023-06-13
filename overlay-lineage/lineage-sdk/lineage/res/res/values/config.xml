@@ -129,4 +129,8 @@
          sdk/src/java/org/lineageos/internal/util/DeviceKeysConstants.java.
     -->
     <integer name="config_longPressOnAppSwitchBehavior">1</integer>
+	
+    <!-- Whether to cleanup fingerprints upon connection to the daemon and when
+         user switches -->
+    <bool name="config_cleanupUnusedFingerprints">false</bool>
 </resources>
