@@ -1,6 +1,20 @@
 GNSS_CFLAGS := \
     -Werror \
-    -Wno-undefined-bool-conversion
+    -Wno-unused-parameter \
+    -Wno-error=macro-redefined \
+    -Wno-error=reorder \
+    -Wno-reorder-ctor \
+    -Wno-error=missing-braces \
+    -Wno-error=self-assign \
+    -Wno-enum-conversion \
+    -Wno-error=logical-op-parentheses \
+    -Wno-error=null-arithmetic \
+    -Wno-error=null-conversion \
+    -Wno-error=parentheses-equality \
+    -Wno-undefined-bool-conversion \
+    -Wno-error=tautological-compare \
+    -Wno-error=switch \
+    -Wno-error=date-time
 
 # GPS-HIDL
 GNSS_HIDL_1_0_TARGET_LIST := msm8960
