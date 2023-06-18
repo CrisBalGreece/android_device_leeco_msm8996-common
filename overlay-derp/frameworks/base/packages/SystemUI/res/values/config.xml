@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2020 LegionOS Project
+<!--
+     Copyright (C) 2023 The LegionOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,9 +13,10 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- About device screen, build maintainer -->
-    <string name="build_maintainer_summary">CrisBalGreece</string>
-    <string name="build_maintainer_telegram" translatable="false">https://t.me/CrisBalGreece</string>
-    <string name="selinux_status_permissive">Принудительно </string>
+<resources>
+    <!-- Max visible notification icons -->
+    <integer name="config_maxVisibleNotificationIcons">6</integer>
+    <integer name="config_maxVisibleNotificationIconsOnLock">7</integer>
+
 </resources>
+
