@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "SettingsProviderResOverlay",
+    resource_dirs: ["res"],
+    vendor: true,
+}

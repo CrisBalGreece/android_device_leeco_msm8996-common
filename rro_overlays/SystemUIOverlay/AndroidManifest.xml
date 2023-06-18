@@ -11,14 +11,11 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.wifi.resources.leeco_msm8996"
-    android:versionCode="1"
-    android:versionName="1.0">
+    package="com.android.systemui.overlay">
 
     <application android:hasCode="false" />
     <overlay
-      android:targetPackage="com.android.wifi.resources"
-      android:targetName="WifiCustomization"
+      android:targetPackage="com.android.systemui"
       android:isStatic="true"
       android:priority="1"/>
 </manifest>

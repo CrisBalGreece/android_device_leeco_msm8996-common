@@ -24,12 +24,9 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-aosp
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -397,6 +394,22 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2
 
+# rro-Overlays
+PRODUCT_PACKAGES += \
+   CarrierConfigOverlay \
+   CellBroadcastReceiverOverlay \
+   DialerOverlay \
+   FrameworksOverlay \
+   MmsOverlay \
+   SettingsOverlay \
+   SettingsProviderResOverlay \
+   SystemUIOverlay \
+   TelecommOverlay \
+   TelephonyOverlay \
+   TetheringConfig \
+   WifiOverlay
+
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     device/leeco/msm8996-common
@@ -432,10 +445,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
-
-# Tethering
-PRODUCT_PACKAGES += \
-    TetheringConfigOverlay
 
 # Thermal
 PRODUCT_PACKAGES += \
@@ -475,7 +484,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     libwpa_client \
     hostapd \
-    WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
 
