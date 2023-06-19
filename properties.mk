@@ -74,8 +74,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.focus_fix=0
 
 # Charger
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.charger.enable_suspend=true
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.charger.enable_suspend=true \
+    ro.charger.disable_init_blank=true
 
 # Chipset
 PRODUCT_PROPERTY_OVERRIDES += \
