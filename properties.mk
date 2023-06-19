@@ -70,8 +70,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.camera.llnoise=1
 
 # Charger
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.charger.enable_suspend=true
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.charger.enable_suspend=true \
+    ro.charger.disable_init_blank=true
 
 # Chipset
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
