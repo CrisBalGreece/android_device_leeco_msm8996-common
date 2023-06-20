@@ -69,10 +69,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.camera.llc=1 \
     persist.camera.llnoise=1
 
-# Camera focus fix
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.camera.focus_fix=0
-
 # Charger
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.charger.enable_suspend=true \
@@ -86,11 +82,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # CNE
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.vendor.cne.feature=1
-
-# CPU profiles
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.spectrum.profile=0 \
-persist.thermal.profile=0
 
 # Data modules
 PRODUCT_PROPERTY_OVERRIDES += \
