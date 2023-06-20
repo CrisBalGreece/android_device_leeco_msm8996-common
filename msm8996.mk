@@ -445,14 +445,7 @@ PRODUCT_PACKAGES += \
     thermal.msm8996
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
-    $(LOCAL_PATH)/configs/thermal-engine-cbg.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-cbg.conf \
-    $(LOCAL_PATH)/configs/thermal-engine-eui.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-eui.conf \
-    $(LOCAL_PATH)/configs/thermal-engine-video.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-video.conf \
-    $(LOCAL_PATH)/configs/thermal-engine-balanced.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-balanced.conf \
-    $(LOCAL_PATH)/configs/thermal-engine-battery.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-battery.conf \
-    $(LOCAL_PATH)/configs/thermal-engine-performance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-performance.conf \
-    $(LOCAL_PATH)/configs/thermal-engine-gaming.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-gaming.conf
+    $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
 # USB
 PRODUCT_PACKAGES += \
