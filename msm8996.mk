@@ -155,17 +155,10 @@ PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
     init.qcom.rc \
     init.qcom.sh \
-    init.profile.sh \
-    init.thermal.sh \
-    init.cdlapref.sh \
-    init.cdla.sh \
     init.qcom.power.rc \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
-    ueventd.qcom.rc \
-    init.spectrum.rc \
-    init.leeco.rc \
-    init.thermal.rc
+    ueventd.qcom.rc
 
 # Consumer IR
 PRODUCT_PACKAGES += \
@@ -174,7 +167,7 @@ PRODUCT_PACKAGES += \
 
 # Device settings
 PRODUCT_PACKAGES += \
-    LeEcoSettings
+    DeviceSettings
 
 # Display
 PRODUCT_PACKAGES += \

@@ -28,9 +28,6 @@
 import /vendor/etc/init/hw/init.qcom.power.rc
 import /vendor/etc/init/hw/init.qcom.usb.rc
 import /vendor/etc/init/hw/init.device.rc
-import /vendor/etc/init/hw/init.spectrum.rc
-import /vendor/etc/init/hw/init.leeco.rc
-import /vendor/etc/init/hw/init.thermal.rc
 
 on early-init
     chown root system /dev/kmsg
@@ -666,3 +663,8 @@ on property:vendor.sys.listeners.registered=*
 on property:ro.vendor.ril.mbn_copy_completed=1
     write /data/vendor/radio/copy_complete 1
 
+on property:persist.sys.le_fast_chrg_enable=1
+    write /sys/class/power_supply/le_ab/le_quick_charge_mode 0
+
+on property:persist.sys.le_fast_chrg_enable=0
+    write /sys/class/power_supply/le_ab/le_quick_charge_mode 1
