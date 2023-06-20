@@ -22,11 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 PRODUCT_COMPRESSED_APEX := false
 
-# Prebuilt packages
-ifneq ($(WITH_GMS), true)
+# Remove packages
 PRODUCT_PACKAGES += \
-    Gboard
-endif
+    RemovePackages
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \
