@@ -31,8 +31,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-aicp
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -437,8 +435,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
-# Tethering
+# WiFi Tethering and Carrier rro_overlays
 PRODUCT_PACKAGES += \
+    WifiOverlay \
+    CarrierConfigOverlay \
     TetheringConfigOverlay
 
 # Thermal
@@ -475,7 +475,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     libwpa_client \
     hostapd \
-    WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
 
