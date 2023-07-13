@@ -480,6 +480,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
+# Device Changelog
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/Changelog.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/Changelog.txt
+
 # Model is set via init library
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
     ro.product.model

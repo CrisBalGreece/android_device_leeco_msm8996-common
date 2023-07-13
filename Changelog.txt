@@ -1,0 +1,22 @@
+====================
+    09-07-2023     
+====================
+
+Changelog|Fixes:
+
+July security patches - r61 tag
+Move qti_whitelist.xml to /system_ext
+Uprev device manifests
+Removed mounting DebugFS
+Updated CarrierConfigOverlay config
+Added and enabled zram writeback for kernel
+Added and enabled zram job shceduler for device/system
+Pinned surfaceflinger
+Our Fingerprint is back without idle issues
+Removed Set combined QS to false flag
+Reorginized system/vendor overlays
+Replace BOARD_CHARGER_DISABLE_INIT_BLANK
+More system fixes here and there...
+
+====================
+
