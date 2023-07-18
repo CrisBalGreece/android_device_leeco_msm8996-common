@@ -147,6 +147,12 @@
          user switches -->
     <bool name="config_cleanupUnusedFingerprints">false</bool>
 	
+    <!-- Flag indicating whether the surface flinger is inefficient
+         at performing a blur.  Used by parts of the UI to turn off
+         the blur effect where it isn't worth the performance hit.
+         As of Honeycomb, blurring is not supported anymore. -->
+    <bool name="config_sf_slowBlur">false</bool>
+	
     <!-- Smart charge sysfs node and value for suspend/resume charging 
     <integer name="config_smartChargingBatteryLevel">90</integer>
     <integer name="config_smartChargingBatteryResumeLevel">30</integer>
