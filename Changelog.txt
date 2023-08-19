@@ -1,18 +1,43 @@
 ====================
-    21-07-2023     
+    20-08-2023     
 ====================
 
-Device Changelog | Fixes
+# DerpFest Platform | Source Changelog
 
-Platform patches - r63 tag
-Reorginize our fstab
-Nuke prebuilt_app-replace with remove_packages
-Adjust thermal_configs
-Nuke quota is deprecated
-More derp-fy additions
-Disable blur because we are Legacy
-Added Greek translations 99%
-More system fixes here and there...
+- August 2023 Security Ptches
+- Merge tag 'android-13.0.0_r72'
+- Include PE's Pixel framework 
+- Bring back QS Header Images
+- Add QS battery customizations
+- Enable new back gesture affordance
+- Tell user when face unlock detection is running
+- Improve switch to unlink ringtone and notifications volume
+- Improve power menu drawables and strings
+- Rebrand Aperture to Flash
+- Replace configurable fingerprint wake-and-unlock by a much simpler implementation from ArrowOS
+- AirPod support changes has been revised on top of new changes based on OpenPods source
+- Settings: Re-order SELinux status on About Phone
+- Settings: Allow toggling in-call notifications
+- Settings: Show single-touch wakeup setting on rear & front fps devices
+- DerpSpace: Use click effect toggle instead of duration for haptic feedback for QSTile
+- Various fixes for FMRadio
+- recovery: Ask to reboot before installing anything after A/B update
+- Relax few restrictions for builds with prebuilt vendor
+- Update Symphonica to 0.6.0
+- Add Hellenic translations
+- Import more Chinese (Simpified) translations
+- Update Russian translations
+
+----------------------------------------------------------------------
+
+# Device Changelog | Fixes
+
+- Import platform patches - 'android-13.0.0_r72'
+- Drop unneeded stuff/configs
+- ueventd.rc: Remove all permissions from /sys/devices/soc0/serial_number
+- Build Lineage Health HAL
+- Set PRODUCT_SET_DEBUGFS_RESTRICTIONS
+* More system fixes here and there...
 
 ====================
 
