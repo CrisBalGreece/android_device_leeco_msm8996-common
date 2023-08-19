@@ -273,6 +273,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.leeco_8996
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 # LineageHW
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/leeco-privapp-permissions-lineagehw.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/leeco-privapp-permissions-lineagehw.xml
