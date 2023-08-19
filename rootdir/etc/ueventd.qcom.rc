@@ -318,6 +318,9 @@ firmware_directories /vendor/firmware_mnt/image/
 # NPU device
 /dev/msm_npu             0644   system     system
 
+# socinfo
+/sys/devices/soc0             serial_number            0000   root    root
+
 # USB role switch
 /sys/class/dual_role_usb/*	data_role	0660	system	system
 /sys/class/dual_role_usb/*	power_role	0660	system	system
