@@ -473,9 +473,11 @@ PRODUCT_PACKAGES += \
 # VNDK
 PRODUCT_PACKAGES += \
     vndk_package
-# VNDK
+
+# Prebuilts VNDK
 PRODUCT_COPY_FILES += \
-prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libcutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcutils-v29.so
+prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libcutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcutils-v29.so \
+prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-core/libhardware_legacy.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libhardware_legacy.so
 
 # WiFi
 PRODUCT_PACKAGES += \
