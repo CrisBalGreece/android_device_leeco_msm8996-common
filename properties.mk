@@ -58,6 +58,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     bluetooth.profile.sap.server.enabled?=true \
     vendor.qcom.bluetooth.soc=rome
 
+# Display - Disable Blur
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.sysui.disableBlur=1
+
 # BPF
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.kernel.ebpf.supported=false
