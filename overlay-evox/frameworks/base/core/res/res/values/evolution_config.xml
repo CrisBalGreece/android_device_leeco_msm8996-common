@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2015-2016 The CyanogenMod Project
-                   2023 The DerpFestOS Project
+                   2023 The EvolutionOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -150,12 +150,15 @@
          As of Honeycomb, blurring is not supported anymore. -->
     <bool name="config_sf_slowBlur">false</bool>
 	
-    <!-- Smart charge sysfs node and value for suspend/resume charging 
+    <!-- Whether device supports in-display fingerprint -->
+    <bool name="config_supportsUdfps">false</bool>
+	
+    <!-- Smart charge sysfs node and value for suspend/resume charging -->
     <integer name="config_smartChargingBatteryLevel">90</integer>
     <integer name="config_smartChargingBatteryResumeLevel">30</integer>
     <bool name="config_smart_battery_available">true</bool>
     <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
     <string name="config_SmartChargingSupspendValue" translatable="false">0</string>
-    <string name="config_SmartChargingResumeValue" translatable="false">1</string> -->
+    <string name="config_SmartChargingResumeValue" translatable="false">1</string> 
 	
 </resources>
