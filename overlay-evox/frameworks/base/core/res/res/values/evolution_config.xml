@@ -152,13 +152,34 @@
 	
     <!-- Whether device supports in-display fingerprint -->
     <bool name="config_supportsUdfps">false</bool>
+
+    <!-- The list of components which should be automatically disabled for a specific device. -->
+    <string-array name="config_deviceDisabledComponents" translatable="false">
+        <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
+        <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item>
+        <item>com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver</item>
+        <item>com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver</item>
+    </string-array>
+
+    <!-- Enables or disables fading edges when marquee is enabled in TextView.
+         Off by default, since the framebuffer readback used to implement the
+         fading edges is prohibitively expensive on most GPUs. -->
+    <bool name="config_ui_enableFadingMarquee">true</bool>
 	
-    <!-- Smart charge sysfs node and value for suspend/resume charging -->
+    <!-- Smart charge sysfs node and value for suspend/resume charging 
     <integer name="config_smartChargingBatteryLevel">90</integer>
     <integer name="config_smartChargingBatteryResumeLevel">30</integer>
     <bool name="config_smart_battery_available">true</bool>
     <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
     <string name="config_SmartChargingSupspendValue" translatable="false">0</string>
-    <string name="config_SmartChargingResumeValue" translatable="false">1</string> 
+    <string name="config_SmartChargingResumeValue" translatable="false">1</string> -->
+
+    <!--Systeminfo for quick settings header 
+    <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone0/temp</string>
+    <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
+    <string name="config_sysGPUFreq">/sys/kernel/gpu/gpu_clock</string>
+    <string name="config_sysGPULoad">/sys/kernel/gpu/gpu_busy</string>
+    <integer name="config_sysCPUTempMultiplier">1000</integer>
+    <integer name="config_sysBatteryTempMultiplier">10</integer> -->
 	
 </resources>

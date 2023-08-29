@@ -18,3 +18,8 @@ type gbfirmware_file, file_type, data_file_type, core_data_file_type, mlstrusted
 type sysfs_mods_camd, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_v4l2_openmode, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_batt_mods, fs_type, sysfs_type, mlstrustedobject;
+
+# Ufs
+type debugfs_ufs, debugfs_type, fs_type;
+# Rmt
+type debugfs_rmt, debugfs_type, fs_type;

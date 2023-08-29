@@ -32,8 +32,7 @@ PRODUCT_COPY_FILES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-evox \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-evox
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -167,9 +166,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     DeviceSettings
 
-# DebugFS
-PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
-
 # Display
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
@@ -278,10 +274,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.leeco_8996
 
-# Lineage Health
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
-
 # LineageHW
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/leeco-privapp-permissions-lineagehw.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/leeco-privapp-permissions-lineagehw.xml
@@ -289,6 +281,10 @@ PRODUCT_COPY_FILES += \
 # LiveDisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm
+
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -491,6 +487,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
+
+# Device Changelog
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/Changelog.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/Changelog.txt
 
 # Model is set via init library
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \

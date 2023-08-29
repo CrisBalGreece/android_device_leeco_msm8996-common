@@ -76,7 +76,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Chipset
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.soc.manufacturer=QTI \
+    ro.soc.manufacturer=Qualcomm \
     ro.soc.model=MSM8996
 
 # CNE
@@ -123,6 +123,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# Fwk detect
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.vendor.qti.va_aosp.support=1
+
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=1 \
@@ -158,6 +162,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.VT_ENABLE=1 \
     persist.radio.VT_HYBRID_ENABLE=1 \
     persist.vendor.qti.telephony.vt_cam_interface=1
+
+# IMS telephony
+PRODUCT_PRODUCT_DEFAULT_PROPERTIES += \
+    ro.telephony.block_binder_thread_on_incoming_calls=false
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -232,3 +240,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # WiFi Display
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.wfd.max_resolution=5
+
+# Zram
+PRODUCT_PRODUCT_DEFAULT_PROPERTIES += \
+    ro.zram.mark_idle_delay_mins=60 \
+    ro.zram.first_wb_delay_mins=180 \
+    ro.zram.periodic_wb_delay_hours=24

@@ -135,12 +135,12 @@ DEVICE_MATRIX_FILE := $(PLATFORM_PATH)/configs/vintf/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(PLATFORM_PATH)/configs/vintf/device_framework_compatibility_matrix.xml
 
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
+
 # Init
 TARGET_INIT_VENDOR_LIB := //$(PLATFORM_PATH):libinit_leeco_msm8996
 TARGET_RECOVERY_DEVICE_MODULES := libinit_leeco_msm8996
-
-# Lineage Health
-TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
 
 # Partitions (/proc/partitions * 2 * BLOCK_SIZE (512) = size in bytes)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
