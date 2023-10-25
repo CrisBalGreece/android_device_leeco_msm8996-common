@@ -18,12 +18,22 @@
 # LeEco msm8996 devices launched with M
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
+# APEX
+# $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+# PRODUCT_COMPRESSED_APEX := false
+
+# GMS
+ifeq ($(WITH_GMS),true)
+GMS_MAKEFILE=gms_minimal.mk
+endif
+
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-aosp
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
@@ -233,7 +243,7 @@ PRODUCT_PACKAGES += \
     charger_res_images
 
 # HIDL
-PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
+# PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -479,6 +489,9 @@ PRODUCT_PACKAGES += \
 # VNDK
 PRODUCT_COPY_FILES += \
 prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libcutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcutils-v29.so
+
+# VINTF
+# PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
 # WiFi
 PRODUCT_PACKAGES += \
