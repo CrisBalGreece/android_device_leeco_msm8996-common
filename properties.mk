@@ -59,8 +59,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=rome
 
 # Display - Disable Blur
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    persist.sysui.disableBlur=1
+# PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    # persist.sysui.disableBlur=1
 
 # BPF
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -130,7 +130,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=1 \
-    debug.renderengine.backend=threaded \
+    debug.renderengine.backend=skiaglthreaded \
     debug.sf.hw=1 \
     dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
