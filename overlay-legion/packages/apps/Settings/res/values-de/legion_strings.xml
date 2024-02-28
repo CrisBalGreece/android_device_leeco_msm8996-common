@@ -18,4 +18,12 @@
     <string name="build_maintainer_summary">CrisBalGreece</string>
     <string name="build_maintainer_telegram" translatable="false">https://t.me/CrisBalGreece</string>
     <string name="selinux_status_permissive">Strikt</string>
+	
+    <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
+    <string name="legion_device_model">LeEco</string>
+    <string name="legion_device_model_summary">Le Max2 (X82x)</string>
+	
+    <!-- Model and Hardware -->
+    <string name="legion_processor_title">Prozessor SD820</string>
+
 </resources>
