@@ -1,0 +1,77 @@
+====================
+     03-11-2024
+====================
+Bluetoot fixes
+
+====================
+     03-10-2024
+====================
+
+
+====================
+     03-09-2024
+====================
+
+
+====================
+     03-08-2024
+====================
+
+
+====================
+     03-07-2024
+====================
+
+
+====================
+     03-06-2024
+====================
+
+
+====================
+     03-05-2024
+====================
+
+
+====================
+     03-04-2024
+====================
+
+
+====================
+     03-03-2024
+====================
+
+
+   * external/chromium-webview/patches
+864d156 Revert "Set android.ext.adservices as optionally used lib"
+
+   * external/chromium-webview/prebuilt/arm
+05a960b Rebuild arm Chromium Webview to remove adservices
+
+   * external/chromium-webview/prebuilt/arm64
+417dec3 Rebuild arm64 Chromium Webview to remove adservices
+
+   * external/chromium-webview/prebuilt/x86
+5e4902f Rebuild x86 Chromium Webview to remove adservices
+
+   * external/chromium-webview/prebuilt/x86_64
+fb4141f Rebuild x86_64 Chromium Webview to remove adservices
+
+====================
+     03-02-2024
+====================
+
+
+   * packages/apps/Aperture
+7314f6b Automatic translation import
+
+   * packages/apps/DeskClock
+7048292 Automatic translation import
+
+   * packages/apps/Etar
+b121287 Automatic translation import
+
+   * packages/apps/Jelly
+21b3eb8 Automatic translation import
+
