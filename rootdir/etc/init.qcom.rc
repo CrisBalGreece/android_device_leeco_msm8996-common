@@ -95,6 +95,11 @@ on post-fs
     write /dev/ipa 1
 
 on post-fs-data
+
+    # Dolby
+    mkdir /data/vendor/dolby 0770 media media
+    mkdir /data/vendor/multimedia 0775 system system
+
     # msm specific files that need to be created on /data
     mkdir /mnt/vendor/persist/drm 0770 system system
     mkdir /mnt/vendor/persist/secnvm 0770 system system

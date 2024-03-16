@@ -140,7 +140,16 @@ function blob_fixup() {
     vendor/etc/permissions/qti-vzw-ims-internal.xml)
         sed -i -e 's|file="/system/vendor/|file="/vendor/|g' "${2}"
         ;;
-
+		
+    # Dolby Moto
+    vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy)
+            echo 'madvise: 1' >> ${2}
+            ;;
+        vendor/lib/libstagefright_soft_ddpdec.so | vendor/lib/libstagefright_soft_ac4dec.so | \
+        vendor/lib/libstagefrightdolby.so | vendor/lib64/libstagefright_soft_ddpdec.so | \
+        vendor/lib64/libdlbdsservice.so | vendor/lib64/libstagefright_soft_ac4dec.so | vendor/lib64/libstagefrightdolby.so)
+            "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v32.so" "${2}"
+            ;;
     esac
 }
 
