@@ -17,8 +17,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=7 \
     ro.vendor.audio.sdk.fluencetype=fluence \
     ro.vendor.audio.sdk.ssr=false \
-    vendor.audio.dolby.ds2.enabled=false \
-    vendor.audio.dolby.ds2.hardbypass=false \
     vendor.audio.hw.aac.encoder=true \
     vendor.audio.offload.buffer.size.kb=64 \
     vendor.audio.offload.gapless.enabled=true \
@@ -57,6 +55,22 @@ PRODUCT_PROPERTY_OVERRIDES += \
     bluetooth.profile.pbap.server.enabled?=true \
     bluetooth.profile.sap.server.enabled?=true \
     vendor.qcom.bluetooth.soc=rome
+
+# Dolby vendor
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.vendor.audio_fx.current=dolby
+vendor.audio.dolby.ds2.enabled=true
+vendor.audio.dolby.ds2.hardbypass=true
+ro.vendor.audio.dolby.dax.support=true
+ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1
+
+# Dolby system props
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.control_privapp_permissions=log
+
+# Dolby system_ext props
+PRODUCT_SYSTEM_EXT_DEFAULT_PROPERTIES += \
+    ro.control_privapp_permissions=log
 
 # Display - Disable Blur
 # PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
