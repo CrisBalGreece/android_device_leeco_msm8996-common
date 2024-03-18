@@ -15,6 +15,6 @@
     <string name="build_maintainer_summary">CrisBalGreece</string>
     <string name="build_device_url">https://t.me/CBG_LeMax2</string>
     <string name="build_maintainer_donate_url">https://t.me/CBG_LeMax2</string>
-    <string name="selinux_status_permissive">Enforcing</string>
+    <string name="selinux_status_permissive">Obligado</string>
 
 </resources>
