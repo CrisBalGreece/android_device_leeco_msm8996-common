@@ -24,4 +24,10 @@ allow system_app sysfs_zram:dir search;
 allow system_app sysfs_zram:file r_file_perms;
 
 #Power-hal
+binder_call(system_app, hal_power_default)
 allow system_app hal_power_default:binder call;
+allow system_app hal_audio_default:binder call;
+
+# Battery Health
+r_dir_file(system_app, sysfs_battery_supply);
+

@@ -72,10 +72,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.control_privapp_permissions=log
 
-# Display - Disable Blur
-# PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    # persist.sysui.disableBlur=1
-
 # BPF
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.kernel.ebpf.supported=false
@@ -246,3 +242,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
+	
+# Zygote
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.device_config.runtime_native.usap_pool_enabled=true
