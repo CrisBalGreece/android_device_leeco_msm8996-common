@@ -1,77 +1,97 @@
 ====================
-     03-11-2024
+     03-20-2024
 ====================
-Bluetoot fixes
-
-====================
-     03-10-2024
-====================
-
-
-====================
-     03-09-2024
-====================
-
-
-====================
-     03-08-2024
-====================
+* 2024.03.20 LeEco X82x/X910
+- March 2024 security patches
+- LeEco MAX_PLUS (X910) is unified from now on!
+- Add prebuilt DolbyAtmos from Moto G52
+- Including system core framework library of Motorola ROM ported from Motorola XT2125 (nio)
+- Including an equalizer global type soundfx ported from Motorola G52 (rhode) for any Android 11plus
+- WiFi speedup adjustments
+- Reduce status_bar_padding_start to 6dp
+- BatteryStatsImpl: Fix divide by zero error
+- Battery fixes: Reduce discharge rate
+- PixelPropsUtils: Update fingerprint for play integrity
+- Drop prebuilt v32-libhardware_legacy.so
+* More system fixes here and there..
 
 
 ====================
-     03-07-2024
+     03-19-2024
 ====================
 
 
 ====================
-     03-06-2024
+     03-18-2024
 ====================
 
 
 ====================
-     03-05-2024
+     03-17-2024
 ====================
 
 
 ====================
-     03-04-2024
-====================
-
-
-====================
-     03-03-2024
+     03-16-2024
 ====================
 
 
    * external/chromium-webview/patches
-864d156 Revert "Set android.ext.adservices as optionally used lib"
+d7502a8 Update Chromium Webview to 122.0.6261.119
 
    * external/chromium-webview/prebuilt/arm
-05a960b Rebuild arm Chromium Webview to remove adservices
+47c88e5 Update Chromium Webview arm prebuilt to 122.0.6261.119
 
    * external/chromium-webview/prebuilt/arm64
-417dec3 Rebuild arm64 Chromium Webview to remove adservices
+bdcd39e Update Chromium Webview arm64 prebuilt to 122.0.6261.119
 
    * external/chromium-webview/prebuilt/x86
-5e4902f Rebuild x86 Chromium Webview to remove adservices
+2ad8d36 Update Chromium Webview x86 prebuilt to 122.0.6261.119
 
    * external/chromium-webview/prebuilt/x86_64
-fb4141f Rebuild x86_64 Chromium Webview to remove adservices
-
-====================
-     03-02-2024
-====================
-
+e3d143e Update Chromium Webview x86_64 prebuilt to 122.0.6261.119
 
    * packages/apps/Aperture
-7314f6b Automatic translation import
+6f6e71b Automatic translation import
 
    * packages/apps/DeskClock
-7048292 Automatic translation import
+f47e5c4 Automatic translation import
 
    * packages/apps/Etar
-b121287 Automatic translation import
+75e2956 Automatic translation import
 
    * packages/apps/Jelly
-21b3eb8 Automatic translation import
+ebed259 Automatic translation import
 
+   * packages/inputmethods/LatinIME
+136da81 Automatic translation import
+
+   * vendor/qcom/opensource/fm-commonsys
+9811f8b Automatic translation import
+
+====================
+     03-15-2024
+====================
+
+
+====================
+     03-14-2024
+====================
+
+
+====================
+     03-13-2024
+====================
+
+
+====================
+     03-12-2024
+====================
+
+
+   * packages/modules/Bluetooth
+ea11bb4 Fix jni crash when get field of adType
+
+====================
+     03-11-2024
+====================
