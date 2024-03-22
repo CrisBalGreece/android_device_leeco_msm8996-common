@@ -17,6 +17,9 @@
 */
 -->
 
+<!-- These resources are around just to allow their values to be customized
+     for different hardware and product builds. -->
+<resources>
     <!-- FPSInfoService Fps file path -->
     <string name="config_fpsInfoSysNode" translatable="false">/sys/devices/virtual/graphics/fb0/measured_fps</string>
 	
