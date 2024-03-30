@@ -46,3 +46,9 @@ on property:persist.thermal.profile=7
     stop thermal-engine
     setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-eui.conf"
     start thermal-engine
+	
+    #MaxPlus
+on property:persist.thermal.profile=8
+    stop thermal-engine
+    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-maxplus.conf"
+    start thermal-engine

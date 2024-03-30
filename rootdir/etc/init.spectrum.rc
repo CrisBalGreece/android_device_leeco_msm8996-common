@@ -1027,4 +1027,130 @@ on property:persist.spectrum.profile=7
     write /dev/cpuset/foreground/cpus 0-2
     write /dev/cpuset/background/cpus 0-1
     write /dev/cpuset/system-background/cpus 0-1
-    write /dev/cpuset/restricted/cpus 0-1   
+    write /dev/cpuset/restricted/cpus 0-1
+
+    # EUI Stock MaxPlus
+on property:persist.spectrum.profile=8
+
+    # Set EUI power settings
+    write /sys/module/cpu_boost/parameters/input_boost_freq 0:1324800
+    write /sys/module/cpu_boost/parameters/input_boost_freq 1:0
+    write /sys/module/cpu_boost/parameters/input_boost_freq 2:1324800
+    write /sys/module/cpu_boost/parameters/input_boost_freq 3:0
+    write /sys/module/cpu_boost/parameters/input_boost_ms 40
+    write /sys/module/msm_performance/parameters/touchboost 0
+	
+    # Enable devrfreq boost
+    write /sys/module/devfreq_boost/parameters/boost_enabled "Y"
+
+    # Set idle GPU to 133 MHz
+    write /sys/class/kgsl/kgsl-3d0/default_pwrlevel 6
+    write /sys/class/kgsl/kgsl-3d0/max_pwrlevel 0
+    write /sys/class/kgsl/kgsl-3d0/devfreq/adrenoboost 0
+    write /sys/devices/soc/b00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/min_clock_mhz 133
+    write /sys/class/kgsl/kgsl-3d0/devfreq/min_freq 133000000
+    write /sys/devices/soc/b00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_clock_mhz 624
+    write /sys/class/kgsl/kgsl-3d0/devfreq/max_freq 624000000
+	
+    # Disable thermal hotplug to switch governor
+    write /sys/module/msm_thermal/core_control/enabled 0
+
+    # Enable Adaptive LMK
+    write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
+    write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 81250
+
+    # Set sync wakee policy tunable
+    write /proc/sys/kernel/sched_prefer_sync_wakee_to_waker 1
+
+    # Configure governor settings for little cluster
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq 1593600
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 300000
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_sched_load 1
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_migration_notif 1
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay 19000
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/boost 0
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load 90
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_rate 20000
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_slack 80000
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/hispeed_freq 960000
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/io_is_busy 1
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/target_loads 80
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/min_sample_time 19000
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/max_freq_hysteresis 79000
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/ignore_hispeed_on_notif 0
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/fast_ramp_down 0
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/enable_prediction 1
+
+    # Bring CPU2 online
+    write /sys/devices/system/cpu/cpu2/online 1
+
+    # Configure governor settings for big cluster
+    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "interactive"
+    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq 2150400
+    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 300000
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_sched_load 1
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_migration_notif 1
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/above_hispeed_delay "19000 1400000:39000 1700000:19000"
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/boost 0
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/go_hispeed_load 90
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/timer_rate 20000
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/timer_slack 80000
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/hispeed_freq 1248000
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/io_is_busy 1
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/target_loads "85 1500000:90 1800000:70"
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/min_sample_time 19000
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/max_freq_hysteresis 79000
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/ignore_hispeed_on_notif 0
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/fast_ramp_down 0
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/enable_prediction 1
+
+    # Re-enable thermal hotplug
+    write /sys/module/msm_thermal/core_control/enabled 1
+
+    # Set big.LITTLE scheduler parameters	
+    write /sys/class/devfreq/soc:qcom,cpubw/governor "bw_hwmon"
+    write /proc/sys/kernel/sched_window_stats_policy 1
+    write /proc/sys/kernel/sched_boost 0
+    write /proc/sys/kernel/sched_migration_fixup 1
+    write /proc/sys/kernel/sched_upmigrate 45
+    write /proc/sys/kernel/sched_downmigrate 45
+    write /proc/sys/kernel/sched_upmigrate_min_nice 9
+    write /proc/sys/kernel/sched_freq_inc_notify 400000
+    write /proc/sys/kernel/sched_freq_dec_notify 400000
+    write /proc/sys/kernel/sched_spill_nr_run 3
+    write /proc/sys/kernel/sched_spill_load 97
+    write /proc/sys/kernel/sched_init_task_load 100
+    write /proc/sys/kernel/sched_big_waker_task_load 33
+    write /proc/sys/kernel/sched_small_task 15
+    write /proc/sys/kernel/sched_wakeup_load_threshold 110
+    write /proc/sys/kernel/sched_small_wakee_task_load 100
+    write /proc/sys/vm/swappiness 60
+    write /proc/sys/vm/vfs_cache_pressure 1000
+
+    # Configure governor settings for big.LITTLE cluster
+    write /sys/devices/system/cpu/cpu0/core_ctl/busy_down_thres 65
+    write /sys/devices/system/cpu/cpu0/core_ctl/busy_up_thres 75
+    write /sys/devices/system/cpu/cpu2/core_ctl/busy_down_thres 85
+    write /sys/devices/system/cpu/cpu2/core_ctl/busy_up_thres 95
+
+    # Configure cpu sched
+    write /sys/devices/system/cpu/cpu0/sched_static_cpu_pwr_cost 10
+    write /sys/devices/system/cpu/cpu0/sched_static_cluster_pwr_cost 20
+    write /sys/devices/system/cpu/cpu1/sched_static_cpu_pwr_cost 10
+    write /sys/devices/system/cpu/cpu1/sched_static_cluster_pwr_cost 20
+    write /sys/devices/system/cpu/cpu2/sched_static_cpu_pwr_cost 500
+    write /sys/devices/system/cpu/cpu2/sched_static_cluster_pwr_cost 1000
+    write /sys/devices/system/cpu/cpu3/sched_static_cpu_pwr_cost 500
+    write /sys/devices/system/cpu/cpu3/sched_static_cluster_pwr_cost 1000
+	
+    # Configure cpu cores
+    write /sys/devices/system/cpu/cpu0/core_ctl/min_cpus 2
+    write /sys/devices/system/cpu/cpu2/core_ctl/min_cpus 2
+
+    # Configure cpuset
+    write /dev/cpuset/top-app/cpus 0-3
+    write /dev/cpuset/foreground/cpus 0-2
+    write /dev/cpuset/background/cpus 0-1
+    write /dev/cpuset/system-background/cpus 0-1
+    write /dev/cpuset/restricted/cpus 0-1

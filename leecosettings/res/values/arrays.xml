@@ -10,6 +10,7 @@
     <item>Gaming</item>
     <item>CBG average</item>
     <item>EUI 30s</item>
+    <item>MaxPlus</item>
     </string-array>
 	
 	<string-array name="spectrum_values">
@@ -21,6 +22,7 @@
     <item>5</item>
     <item>6</item>
     <item>7</item>
+    <item>8</item>
 	</string-array>
 	
 	<string-array name="thermal_profiles">
@@ -32,6 +34,7 @@
     <item>Gaming</item>
     <item>CBG average</item>
     <item>EUI 30s</item>
+    <item>MaxPlus</item>
 	</string-array>
 	
 	<string-array name="thermal_values">
@@ -43,6 +46,7 @@
     <item>5</item>
     <item>6</item>
     <item>7</item>
+    <item>8</item>
 	</string-array>
 	
 </resources>
