@@ -1,5 +1,5 @@
 ====================
-    09-03-2024     
+    02-04-2024     
 ====================
 
 # DerpFest Platform | Source Changelog
@@ -19,11 +19,15 @@
 
 ----------------------------------------------------------------------
 
-# Device LeMax2 Changelog | Fixes
+# Device LeMax2 | MaxPlus | Changelog | Fixes
 
 - Import platform patches - 'android-security-13.0.0_r15'
-- Adjust core thermals for lower temperatures
-* Small system fixes...
+- MaxPlus implements
+- Bring back mock hidl power stats
+- Label perf 2.0
+- Add power.stats to satisfy FCM
+- Kernel changes for MaxPlus Sharp panel
+- Small system fixes...
 
 ====================
 
