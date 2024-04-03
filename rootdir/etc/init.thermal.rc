@@ -41,14 +41,20 @@ on property:persist.thermal.profile=6
     setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-cbg.conf"
     start thermal-engine
 	
-    #EUI
+    #EUI 30s
 on property:persist.thermal.profile=7
     stop thermal-engine
-    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-eui.conf"
+    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-eui30s.conf"
+    start thermal-engine
+	
+    #EUI 19s
+on property:persist.thermal.profile=8
+    stop thermal-engine
+    setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-eui19s.conf"
     start thermal-engine
 	
     #MaxPlus
-on property:persist.thermal.profile=8
+on property:persist.thermal.profile=9
     stop thermal-engine
     setprop sys.qcom.thermalcfg "/vendor/etc/thermal-engine-maxplus.conf"
     start thermal-engine
