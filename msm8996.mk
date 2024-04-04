@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 # Prebuilt packages
 PRODUCT_PACKAGES += \
-    LetvCamera
+    GcamGo
 ifneq ($(LEGION_GAPPS), true)
 PRODUCT_PACKAGES += \
     Gboard
