@@ -64,10 +64,6 @@ vendor.audio.dolby.ds2.hardbypass=true \
 ro.vendor.audio.dolby.dax.support=true \
 ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1
 
-# Dolby system props
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.control_privapp_permissions=log
-
 # Dolby system_ext props
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.control_privapp_permissions=log
