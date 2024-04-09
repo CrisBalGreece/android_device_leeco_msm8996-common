@@ -1,2 +1,2 @@
 PRODUCT_PACKAGES += Gboard
-PRODUCT_PACKAGES += GcamGo
+
