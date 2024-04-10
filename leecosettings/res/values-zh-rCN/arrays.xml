@@ -9,6 +9,8 @@
 		<item>游戏</item>		
 		<item>CBG的调度</item>	
 		<item>EUI 30s的调度</item>
+        <item>EUI 19s</item>
+        <item>MaxPlus</item>
 	</string-array>
 	<string-array name="spectrum_values">
 		<item>0</item>
@@ -30,6 +32,8 @@
 		<item>游戏</item>		
 		<item>CBG的调度</item>	
 		<item>EUI 30s的调度</item>
+        <item>EUI 19s</item>
+        <item>MaxPlus</item>
 	</string-array>
 	
 	<string-array name="thermal_values">
