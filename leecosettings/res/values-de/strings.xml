@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2022 The Android Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	
+    <!-- Kategorie-Titel -->
+    <string name="leeco_settings_title">LeEco-Einstellungen</string>
+    <string name="camera_pref_title">Kamera</string>
+    <string name="battery_settings_title">Akku</string>
+    <string name="cdla_settings_title">Audio</string>
+    <string name="graphics_title">Grafik</string>
+    <string name="system_title">System</string>
+    <string name="spectrum_profile_title">CPU-Profile</string>
+    <string name="thermal_profile_title">CPU-Thermalprofile</string>
+
+    <!-- Kcal -->
+    <string name="kcal_title">Displayfarbe</string>
+    <string name="kcal_summary">Display-Farbkalibrierung mit KCAL. Gerät nach Deaktivierung oder Zurücksetzen neu starten.</string>
+    <string name="kcal_enabled_title">KCAL aktivieren</string>
+    <string name="kcal_enabled_summary">Display-Kalibrierung mit KCAL einschalten.</string>
+    <string name="kcal_red">Rot</string>
+    <string name="kcal_green">Grün</string>
+    <string name="kcal_blue">Blau</string>
+    <string name="kcal_saturation">Sättigung</string>
+    <string name="kcal_contrast">Kontrast</string>
+    <string name="menu_reset">Zurücksetzen</string>
+    <string name="kcal_color_temp">Farbtemperatur (K)</string>	
+
+    <!-- Akku -->
+    <string name="qc_title">Schnellladung</string>
+    <string name="qc_summary">Nach dem Aktivieren/Deaktivieren den Ladestecker ab- und wieder anschließen.</string>
+
+    <!-- Live-Display -->
+    <string name="live_display_title">Display</string>
+    <string name="live_display_summary">Bildschirmhelligkeit verringern.</string>
+	
+    <!-- Sound -->
+    <string name="cdla_title">CDLA</string>
+    <string name="cdla_summary">Für original EUI-Audio.</string>
+
+    <!-- Autofokus der Kamera beheben -->
+    <string name="camera_focus_fix_title">Autofokus-Fix</string>
+    <string name="camera_focus_fix_summary">Nur aktivieren, wenn Ihr Gerät Probleme mit dem Autofokus hat.</string>
+	
+    <!-- Kamera HAL3 -->
+    <string name="camera_hal3_title">HAL3 aktivieren/deaktivieren</string>
+    <string name="camera_hal3_summary">Das Deaktivieren von HAL3 erzwingt stattdessen die Verwendung von HAL1. Beachten Sie bitte, dass Gcam-Mods HAL3 benötigen und Sie eine Minute warten müssen, bevor Sie eine Kamera-App verwenden können, da der Neustart des Kamera-HAL und des Dienstes Zeit benötigt.</string>
+
+	<!-- CPU-Profile -->
+    <string name="spectrum_title">CPU-Energieprofil</string>
+    <string name="spectrum_summary">Wählen Sie Ihr Leistungs- bzw. Energiesparprofil aus.</string>
+    <string name="spectrum_dialogTitle">CPU-Leistungsprofil</string>
+	
+    <!-- Thermalprofile -->
+    <string name="thermal_title">Thermalprofil</string>
+    <string name="thermal_summary">Wählen Sie Ihr Thermalprofil aus. Achten Sie bei der Anwendung von Leistungs-, Video- oder Spieleprofilen auf hohe Temperaturen.</string>
+    <string name="thermal_dialogTitle">CPU-Thermalprofil. Ein Neustart ist erforderlich, um es anzuwenden.</string>
+
+    <!-- App-Energiesparen und Benachrichtigungen -->
+    <string name="powersave_settings_title">Energiesparen</string>
+    <string name="prefs_battery_saver_title">System- und Benutzeranwendungen</string>
+    <string name="prefs_battery_saver_summary">Akkuoptimierung für Benutzer- und Systemanwendungen.</string>
+    <string name="prefs_app_options_title">Benachrichtigungseinstellungen</string>
+    <string name="prefs_app_options_summary">Benachrichtigungseinstellungen für Benutzer- und Systemanwendungen.</string>
+    <string name="app_title">App-Datenschutz</string>
+    <string name="prefs_app_unknown_title">Unbekannte oder heruntergeladene Anwendungen</string>
+    <string name="prefs_app_unknown_summary">Installationsoptionseinstellungen für heruntergeladene oder unbekannte Anwendungen.</string>
+
+
+</resources>

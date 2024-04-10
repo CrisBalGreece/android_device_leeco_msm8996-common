@@ -15,11 +15,67 @@
 
     <string name="leeco_settings_title">Leeco Settings</string>
 
-    <!-- Bateria -->
-    <string name="battery_settings_title">Bateria</string>
-    <string name="qc_title">Carga rapida</string>
-    <string name="qc_summary">Activar o desactivar la carga rapida</string>
-    <string name="camera_pref_title">Camara</string>
-    <string name="camera_focus_fix_title">Fix para el enfoque</string>
-    <string name="camera_focus_fix_summary">Activar/desactivar el fix para el enfoque</string>
+    <!-- Título de categoría -->
+    <string name="leeco_settings_title">Ajustes de Leeco</string>
+    <string name="camera_pref_title">Cámara</string>
+    <string name="battery_settings_title">Batería</string>
+    <string name="cdla_settings_title">Audio</string>
+    <string name="graphics_title">Gráficos</string>
+    <string name="system_title">Sistema</string>
+    <string name="spectrum_profile_title">Perfiles de CPU</string>
+    <string name="thermal_profile_title">Perfiles térmicos de CPU</string>
+
+    <!-- Kcal -->
+    <string name="kcal_title">Color de pantalla</string>
+    <string name="kcal_summary">Calibración del color de la pantalla usando KCAL. Reinicia el dispositivo después de deshabilitar o restablecer.</string>
+    <string name="kcal_enabled_title">Habilitar KCAL</string>
+    <string name="kcal_enabled_summary">Activa la calibración de la pantalla usando KCAL.</string>
+    <string name="kcal_red">Rojo</string>
+    <string name="kcal_green">Verde</string>
+    <string name="kcal_blue">Azul</string>
+    <string name="kcal_saturation">Saturación</string>
+    <string name="kcal_contrast">Contraste</string>
+    <string name="menu_reset">Restablecer</string>
+    <string name="kcal_color_temp">Temperatura de color (K)</string>	
+
+    <!-- Batería -->
+    <string name="qc_title">Carga rápida</string>
+    <string name="qc_summary">Requiere desconectar y volver a conectar el cargador después de habilitar/deshabilitar.</string>
+
+    <!-- Pantalla en vivo -->
+    <string name="live_display_title">Pantalla</string>
+    <string name="live_display_summary">Disminuye el brillo de la pantalla.</string>
+	
+    <!-- Sonido -->
+    <string name="cdla_title">CDLA</string>
+    <string name="cdla_summary">Para el audio original de EUI.</string>
+
+    <!-- Corrección de enfoque de la cámara -->
+    <string name="camera_focus_fix_title">Corrección de enfoque automático</string>
+    <string name="camera_focus_fix_summary">Actívalo solo si tu dispositivo tiene problemas de enfoque automático.</string>
+	
+    <!-- HAL3 de la cámara -->
+    <string name="camera_hal3_title">Deshabilitar/Habilitar HAL3</string>
+    <string name="camera_hal3_summary">Desactivar HAL3 obligará al uso de HAL1 en su lugar. Ten en cuenta que las modificaciones de Gcam requieren HAL3 y debes esperar un minuto antes de usar una aplicación de cámara, ya que llevará tiempo reiniciar el HAL y el servicio de la cámara.</string>
+
+	<!-- Perfiles de CPU -->
+    <string name="spectrum_title">Perfil de energía de la CPU</string>
+    <string name="spectrum_summary">Elige tu perfil de rendimiento/ahorro de energía.</string>
+    <string name="spectrum_dialogTitle">Perfil de energía de la CPU</string>
+	
+    <!-- Perfiles térmicos -->
+    <string name="thermal_title">Perfil térmico</string>
+    <string name="thermal_summary">Elige tu perfil térmico. Ten cuidado con las altas temperaturas al aplicar perfiles de rendimiento, vídeo o juegos.</string>
+    <string name="thermal_dialogTitle">Perfil térmico de la CPU. Se necesita un reinicio para aplicar los cambios.</string>
+
+    <!-- Ahorro de energía de la aplicación y notificaciones -->
+    <string name="powersave_settings_title">Ahorro de energía</string>
+    <string name="prefs_battery_saver_title">Aplicaciones del sistema y del usuario</string>
+    <string name="prefs_battery_saver_summary">Optimización de la batería para aplicaciones del usuario y del sistema.</string>
+    <string name="prefs_app_options_title">Ajustes de notificaciones</string>
+    <string name="prefs_app_options_summary">Ajustes de notificaciones para aplicaciones del usuario y del sistema.</string>
+    <string name="app_title">Privacidad de la aplicación</string>
+    <string name="prefs_app_unknown_title">Aplicaciones desconocidas o descargadas</string>
+    <string name="prefs_app_unknown_summary">Ajustes de opciones de instalación para aplicaciones descargadas o desconocidas.</string>
+
 </resources>
