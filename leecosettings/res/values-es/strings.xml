@@ -13,8 +13,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="leeco_settings_title">Leeco Settings</string>
-
     <!-- Título de categoría -->
     <string name="leeco_settings_title">Ajustes de Leeco</string>
     <string name="camera_pref_title">Cámara</string>
