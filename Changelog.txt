@@ -1,97 +1,118 @@
 ====================
-     03-20-2024
-====================
-* 2024.03.20 LeEco X82x/X910
-- March 2024 security patches
-- LeEco MAX_PLUS (X910) is unified from now on!
-- Add prebuilt DolbyAtmos from Moto G52
-- Including system core framework library of Motorola ROM ported from Motorola XT2125 (nio)
-- Including an equalizer global type soundfx ported from Motorola G52 (rhode) for any Android 11plus
-- WiFi speedup adjustments
-- Reduce status_bar_padding_start to 6dp
-- BatteryStatsImpl: Fix divide by zero error
-- Battery fixes: Reduce discharge rate
-- PixelPropsUtils: Update fingerprint for play integrity
-- Drop prebuilt v32-libhardware_legacy.so
-* More system fixes here and there..
-
-
-====================
-     03-19-2024
+     07-05-2024
 ====================
 
 
+LeEco X82x/X910
+# Device LeMax2 | MaxPlus | Changelog | Fixes
+
+- Import June platform security patches - 'android-security'
+- Update changelog and configs
+- Nuke fp cleanup
+- Final configs for WiFi-UA region
+- Small Kernel changes
+- Small thermal fixes
+- Small system fixes here and there...
+
+
 ====================
-     03-18-2024
+     06-23-2024
 ====================
 
 
 ====================
-     03-17-2024
+     06-22-2024
+====================
+
+
+   * external/hosts
+05a9ae6 Release 3.14.80
+
+====================
+     06-21-2024
+====================
+
+
+   * build/make
+1015a33 Bump Security String to 2024-06-05
+
+====================
+     06-20-2024
 ====================
 
 
 ====================
-     03-16-2024
+     05-23-2024
 ====================
 
 
-   * external/chromium-webview/patches
-d7502a8 Update Chromium Webview to 122.0.6261.119
+Test Updater x2 build
 
-   * external/chromium-webview/prebuilt/arm
-47c88e5 Update Chromium Webview arm prebuilt to 122.0.6261.119
+====================
+     05-22-2024
+====================
 
-   * external/chromium-webview/prebuilt/arm64
-bdcd39e Update Chromium Webview arm64 prebuilt to 122.0.6261.119
 
-   * external/chromium-webview/prebuilt/x86
-2ad8d36 Update Chromium Webview x86 prebuilt to 122.0.6261.119
+   * frameworks/base
+cfd74877 Prioritize system toasts
 
-   * external/chromium-webview/prebuilt/x86_64
-e3d143e Update Chromium Webview x86_64 prebuilt to 122.0.6261.119
+====================
+     05-21-2024
+====================
+
+
+   * external/hosts
+7dc5651 Release 3.14.73
+
+====================
+     05-20-2024
+====================
+
+
+====================
+     05-19-2024
+====================
+
+
+====================
+     05-18-2024
+====================
+
+
+====================
+     05-17-2024
+====================
+
+
+====================
+     05-16-2024
+====================
+
 
    * packages/apps/Aperture
-6f6e71b Automatic translation import
+ba4d61e Automatic translation import
+
+   * packages/apps/Camera2
+e290e9e Automatic translation import
 
    * packages/apps/DeskClock
-f47e5c4 Automatic translation import
+b8e55fa Automatic translation import
+
+   * packages/apps/DocumentsUI
+0458482 Automatic translation import
 
    * packages/apps/Etar
-75e2956 Automatic translation import
+8fe2cb3 Automatic translation import
 
    * packages/apps/Jelly
-ebed259 Automatic translation import
+45174a2 Automatic translation import
 
    * packages/inputmethods/LatinIME
-136da81 Automatic translation import
+808f4f3 Automatic translation import
 
    * vendor/qcom/opensource/fm-commonsys
-9811f8b Automatic translation import
+3828520 Automatic translation import
 
 ====================
-     03-15-2024
-====================
-
-
-====================
-     03-14-2024
-====================
-
-
-====================
-     03-13-2024
-====================
-
-
-====================
-     03-12-2024
-====================
-
-
-   * packages/modules/Bluetooth
-ea11bb4 Fix jni crash when get field of adType
-
-====================
-     03-11-2024
+     05-15-2024
 ====================
